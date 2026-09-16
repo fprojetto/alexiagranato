@@ -1,45 +1,69 @@
 /* ==========================================================================
    ALEXIA GRANATO YOGA & MATERNITÀ
-   Inspired by Practice Feel Glow (practicefeelglow.com)
-   Aesthetic: Minimalist, Scandinavian/Editorial Wellness, Organic & Serene
+   Official Brand Guidelines 2026 Implementation
+   Studio: Nora Studio 2026
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
 
 :root {
-  /* Practice Feel Glow Exact Sampled Color Palette */
-  --color-bg: #F7F4F0;              /* Warm alabaster / linen base */
-  --color-bg-secondary: #EFEAE4;    /* Slightly deeper warm neutral */
-  --color-bg-card: #FFFFFF;         /* Crisp card background */
-  --color-text: #1D1E1B;            /* Deep earthy charcoal */
-  --color-text-muted: #575A53;      /* Calming olive-grey text */
-  --color-text-light: #7A7E75;      /* Secondary muted metadata */
-  
-  --color-accent: #5A6659;          /* Deep moss / sage green accent */
-  --color-accent-hover: #434D42;    /* Darker moss */
-  --color-light-accent: #CFD3C5;    /* Delicate sage tint / highlight */
-  --color-soft-sage: #DDE3D6;       /* Pale botanical tint */
-  --color-gold: #C2A676;            /* Subtle warm gold accent */
-  
-  --color-dark-section: #1E281F;    /* Deep woodland green for accent section */
-  --color-dark-section-text: #F7F4F0;
-  
-  --border-subtle: rgba(29, 30, 27, 0.12);
-  --border-card: rgba(29, 30, 27, 0.08);
-  --shadow-soft: 0 10px 30px rgba(29, 30, 27, 0.04);
-  --shadow-hover: 0 18px 45px rgba(29, 30, 27, 0.08);
+  /* ------------------------------------------------------------------------
+     OFFICIAL BRAND PALETTE (From brand_book.pdf)
+     ------------------------------------------------------------------------ */
+  /* Coral - Warmth (35%): Logo, Key headlines, Cover pages, High-impact moments */
+  --color-coral: #ED6A5B;
+  --color-coral-dark: #D45143;
+  --color-coral-soft: rgba(237, 106, 91, 0.12);
 
-  /* Typography */
-  --font-serif: 'Arsenal', serif;
-  --font-heading: 'Arsenal', sans-serif;
-  --font-subheading: 'Montserrat', sans-serif;
+  /* Soft Peach - Calm (50%): Backgrounds, Body text, Long-form content, Layout spacing */
+  --color-soft-peach: #F1D4C6;
+  --color-soft-peach-light: #FBF4EE;
+  --color-soft-peach-surface: #F8EAE2;
+  --color-card-bg: #FFFFFF;
+
+  /* Light Black (10%): High contrast text & structural elements */
+  --color-black: #121212;
+  --color-text-dark: #121212;
+  --color-text-body: #333333;
+  --color-text-muted: #5A5A5A;
+  --color-text-light: #767676;
+
+  /* Secondary & Supporting Accents (10% & 5%) */
+  --color-ocean: #4356A6;        /* Ocean Twilight - Movement */
+  --color-ocean-dark: #324385;   /* Ocean Dark hover */
+  --color-pearl-aqua: #7ACAB6;   /* Pearl Aqua - Trust */
+  --color-honeydew: #C3E1D0;     /* Honeydew - Care */
+  --color-blush: #FAB397;        /* Blush - Confidence */
+
+  /* Functional Mappings */
+  --color-bg: var(--color-soft-peach-light);
+  --color-bg-alt: var(--color-soft-peach-surface);
+  --color-text: var(--color-text-body);
+  --color-accent: var(--color-coral);
+  --color-accent-hover: var(--color-coral-dark);
+
+  /* Borders & Shadows */
+  --border-subtle: rgba(18, 18, 18, 0.08);
+  --border-peach: rgba(237, 106, 91, 0.18);
+  --border-card: rgba(18, 18, 18, 0.06);
+  --shadow-soft: 0 10px 30px rgba(18, 18, 18, 0.04);
+  --shadow-hover: 0 18px 40px rgba(237, 106, 91, 0.14);
+
+  /* ------------------------------------------------------------------------
+     OFFICIAL BRAND TYPOGRAPHY (From brand_book.pdf p.13-14)
+     ------------------------------------------------------------------------ */
+  /* DM Sans: Header, Titles, Key Statements */
+  --font-heading: 'DM Sans', sans-serif;
+  --font-subheading: 'DM Sans', sans-serif;
+
+  /* Poppins: Body text, legibility, balance & warmth */
   --font-body: 'Poppins', sans-serif;
 
-  /* Spacing */
+  /* Layout Spacing */
   --container-max-width: 1320px;
   --section-padding-y: clamp(4.5rem, 8vw, 7.5rem);
   --section-padding-x: clamp(1.25rem, 4vw, 3.5rem);
-  --border-radius: 4px;
+  --border-radius: 8px;
   --transition: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
@@ -68,76 +92,79 @@ body {
 }
 
 ::selection {
-  background: var(--color-light-accent);
-  color: var(--color-text);
+  background: var(--color-soft-peach);
+  color: var(--color-black);
 }
 
 ::-moz-selection {
-  background: var(--color-light-accent);
-  color: var(--color-text);
+  background: var(--color-soft-peach);
+  color: var(--color-black);
 }
 
-/* Typography Hierarchy matching Practice Feel Glow */
+/* Typography Hierarchy based on Brand Book Type System */
 h1, h2, h3, h4, h5, h6 {
-  color: var(--color-text);
-  font-weight: 400;
+  font-family: var(--font-heading);
+  color: var(--color-black);
   line-height: 1.25;
 }
 
 h1 {
-  font-family: var(--font-heading);
-  font-size: clamp(2.2rem, 5vw, 3.6rem);
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  font-weight: 400;
+  font-size: clamp(2.3rem, 5.2vw, 3.8rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-coral);
   margin-bottom: 1.5rem;
 }
 
 h2 {
-  font-family: var(--font-heading);
-  font-size: clamp(1.8rem, 3.6vw, 2.6rem);
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  font-size: clamp(1.9rem, 3.8vw, 2.7rem);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--color-black);
   margin-bottom: 1rem;
 }
 
+h2.text-coral {
+  color: var(--color-coral);
+}
+
 h3 {
-  font-family: var(--font-subheading);
-  font-size: clamp(0.95rem, 1.4vw, 1.15rem);
-  letter-spacing: 0.26em;
-  text-transform: uppercase;
+  font-size: clamp(1.15rem, 1.8vw, 1.45rem);
   font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--color-black);
   margin-bottom: 0.8rem;
 }
 
 h4 {
-  font-family: var(--font-subheading);
-  font-size: clamp(0.8rem, 1.1vw, 0.95rem);
-  letter-spacing: 0.32em;
+  font-size: clamp(0.78rem, 1.1vw, 0.92rem);
+  font-weight: 700;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  font-weight: 600;
-  color: var(--color-accent);
+  color: var(--color-ocean);
   margin-bottom: 0.6rem;
 }
 
 p {
-  color: var(--color-text-muted);
+  color: var(--color-text);
   font-size: 1.02rem;
   line-height: 1.85;
   margin-bottom: 1.25rem;
 }
 
 p.lead {
-  font-size: clamp(1.08rem, 1.5vw, 1.22rem);
-  color: var(--color-text);
+  font-size: clamp(1.1rem, 1.5vw, 1.25rem);
+  color: var(--color-black);
   line-height: 1.8;
+  font-weight: 400;
 }
 
 p.italic-quote {
-  font-family: var(--font-serif);
+  font-family: var(--font-heading);
   font-style: italic;
-  font-size: 1.25rem;
-  color: var(--color-text);
+  font-size: 1.3rem;
+  color: var(--color-coral);
+  font-weight: 500;
 }
 
 a {
@@ -166,14 +193,13 @@ ul {
 
 /* Announcement Bar */
 .announcement-bar {
-  background-color: var(--color-light-accent);
-  color: var(--color-text);
-  font-family: var(--font-subheading);
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  padding: 0.6rem 1.2rem;
+  background-color: var(--color-honeydew);
+  color: var(--color-black);
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 0.65rem 1.2rem;
   text-align: center;
   position: relative;
   z-index: 101;
@@ -181,17 +207,22 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  border-bottom: 1px solid rgba(29, 30, 27, 0.08);
+  border-bottom: 1px solid rgba(18, 18, 18, 0.06);
+}
+
+.announcement-bar strong {
+  color: var(--color-black);
 }
 
 .announcement-bar a {
+  color: var(--color-ocean);
   text-decoration: underline;
   text-underline-offset: 3px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .announcement-bar a:hover {
-  color: var(--color-accent);
+  color: var(--color-coral);
 }
 
 .announcement-bar .bar-close {
@@ -200,8 +231,8 @@ ul {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 1.1rem;
-  color: var(--color-text);
+  font-size: 1.2rem;
+  color: var(--color-black);
   opacity: 0.6;
   transition: var(--transition);
 }
@@ -210,45 +241,50 @@ ul {
   opacity: 1;
 }
 
-/* Header & Navigation (PFG Style) */
+/* Header & Navigation */
 .header {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: rgba(247, 244, 240, 0.94);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(251, 244, 238, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   z-index: 100;
   border-bottom: 1px solid transparent;
   transition: var(--transition);
 }
 
 .header.is-scrolled {
-  background-color: rgba(247, 244, 240, 0.98);
+  background-color: rgba(251, 244, 238, 0.98);
   border-bottom-color: var(--border-subtle);
-  box-shadow: 0 4px 20px rgba(29, 30, 27, 0.03);
+  box-shadow: 0 4px 20px rgba(18, 18, 18, 0.03);
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
 }
 
 .brand-logo {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.85rem;
 }
 
 .brand-logo img {
-  height: 48px;
+  height: 52px;
   width: auto;
+  transition: transform 0.3s ease;
 }
 
-/* Nav links with PFG hover opacity effect */
+.brand-logo:hover img {
+  transform: scale(1.02);
+}
+
+/* Navigation Links (Practice Feel Glow Hover Opacity Effect) */
 .nav-menu {
   display: flex;
   align-items: center;
@@ -256,21 +292,20 @@ ul {
 }
 
 .nav-menu:hover .nav-link {
-  opacity: 0.4;
+  opacity: 0.35;
 }
 
 .nav-menu .nav-link:hover {
   opacity: 1;
-  color: var(--color-accent);
+  color: var(--color-coral);
 }
 
 .nav-link {
-  font-family: var(--font-subheading);
-  font-size: 0.82rem;
-  font-weight: 500;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--color-text);
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-black);
   padding: 0.4rem 0.2rem;
   position: relative;
   transition: opacity 0.25s ease, color 0.25s ease;
@@ -282,8 +317,8 @@ ul {
   bottom: 0;
   left: 0;
   width: 0%;
-  height: 1.5px;
-  background-color: var(--color-accent);
+  height: 2px;
+  background-color: var(--color-coral);
   transition: width 0.3s ease;
 }
 
@@ -304,59 +339,67 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  font-family: var(--font-subheading);
-  font-size: 0.76rem;
-  font-weight: 600;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  padding: 0.95rem 2rem;
-  border-radius: 2px;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.9rem 2.1rem;
+  border-radius: 30px;
   cursor: pointer;
   transition: var(--transition);
   text-align: center;
 }
 
+/* Primary Button: Coral Warmth */
 .btn-primary {
-  background-color: var(--color-text);
-  color: var(--color-bg);
-  border: 1px solid var(--color-text);
+  background-color: var(--color-coral);
+  color: #FFFFFF;
+  border: 2px solid var(--color-coral);
+  box-shadow: 0 4px 16px rgba(237, 106, 91, 0.28);
 }
 
 .btn-primary:hover {
-  background-color: transparent;
-  color: var(--color-text);
+  background-color: var(--color-coral-dark);
+  border-color: var(--color-coral-dark);
+  color: #FFFFFF;
   transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(237, 106, 91, 0.38);
 }
 
+/* Outline Button */
 .btn-outline {
   background-color: transparent;
-  color: var(--color-text);
-  border: 1px solid var(--color-text);
+  color: var(--color-black);
+  border: 2px solid var(--color-black);
 }
 
 .btn-outline:hover {
-  background-color: var(--color-text);
-  color: var(--color-bg);
-  transform: translateY(-2px);
-}
-
-.btn-sage {
-  background-color: var(--color-accent);
-  color: #FFFFFF;
-  border: 1px solid var(--color-accent);
-}
-
-.btn-sage:hover {
-  background-color: var(--color-accent-hover);
-  border-color: var(--color-accent-hover);
+  background-color: var(--color-black);
   color: #FFFFFF;
   transform: translateY(-2px);
 }
 
+/* Ocean Twilight Button */
+.btn-ocean {
+  background-color: var(--color-ocean);
+  color: #FFFFFF;
+  border: 2px solid var(--color-ocean);
+  box-shadow: 0 4px 16px rgba(67, 86, 166, 0.25);
+}
+
+.btn-ocean:hover {
+  background-color: var(--color-ocean-dark);
+  border-color: var(--color-ocean-dark);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(67, 86, 166, 0.35);
+}
+
+/* WhatsApp Button */
 .btn-whatsapp {
   background-color: #25D366;
   color: #FFFFFF;
-  border: 1px solid #25D366;
+  border: 2px solid #25D366;
   box-shadow: 0 4px 15px rgba(37, 211, 102, 0.25);
 }
 
@@ -368,9 +411,8 @@ ul {
 }
 
 .btn-sm {
-  padding: 0.65rem 1.4rem;
-  font-size: 0.72rem;
-  letter-spacing: 0.18em;
+  padding: 0.6rem 1.4rem;
+  font-size: 0.78rem;
 }
 
 /* Mobile Navigation */
@@ -387,7 +429,7 @@ ul {
   display: block;
   width: 24px;
   height: 2px;
-  background-color: var(--color-text);
+  background-color: var(--color-black);
   position: relative;
   transition: var(--transition);
 }
@@ -398,7 +440,7 @@ ul {
   position: absolute;
   width: 24px;
   height: 2px;
-  background-color: var(--color-text);
+  background-color: var(--color-black);
   transition: var(--transition);
 }
 
@@ -411,10 +453,12 @@ ul {
 .burger-btn.is-active .burger-icon::before {
   transform: rotate(45deg);
   top: 0;
+  background-color: var(--color-coral);
 }
 .burger-btn.is-active .burger-icon::after {
   transform: rotate(-45deg);
   bottom: 0;
+  background-color: var(--color-coral);
 }
 
 .mobile-menu-overlay {
@@ -423,7 +467,7 @@ ul {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: var(--color-bg);
+  background-color: var(--color-soft-peach-surface);
   z-index: 99;
   display: flex;
   flex-direction: column;
@@ -450,22 +494,21 @@ ul {
 
 .mobile-menu-nav a {
   font-family: var(--font-heading);
-  font-size: 1.65rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--color-text);
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--color-black);
 }
 
 .mobile-menu-nav a:hover {
-  color: var(--color-accent);
+  color: var(--color-coral);
 }
 
 /* ==========================================================================
-   HERO SECTION (Eroe / Copertina Principale)
+   HERO SECTION
    ========================================================================== */
 .hero-section {
   position: relative;
-  padding-top: clamp(4rem, 8vw, 7rem);
+  padding-top: clamp(3.5rem, 7vw, 6.5rem);
   padding-bottom: clamp(4rem, 8vw, 7rem);
   overflow: hidden;
 }
@@ -490,34 +533,33 @@ ul {
 }
 
 .hero-overline span {
-  font-family: var(--font-subheading);
-  font-size: 0.78rem;
-  letter-spacing: 0.32em;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  font-weight: 600;
-  color: var(--color-accent);
+  font-weight: 700;
+  color: var(--color-ocean);
 }
 
 .hero-overline::before {
   content: '';
   display: inline-block;
-  width: 28px;
-  height: 1px;
-  background-color: var(--color-accent);
+  width: 32px;
+  height: 2px;
+  background-color: var(--color-coral);
 }
 
 .hero-title {
   margin-bottom: 1.5rem;
-  color: var(--color-text);
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .hero-lead {
-  font-size: clamp(1.05rem, 1.4vw, 1.18rem);
-  color: var(--color-text-muted);
+  font-size: clamp(1.05rem, 1.4vw, 1.2rem);
+  color: var(--color-text-body);
   line-height: 1.85;
   margin-bottom: 2rem;
-  max-width: 600px;
+  max-width: 620px;
 }
 
 .hero-badges {
@@ -526,23 +568,23 @@ ul {
   gap: 0.6rem 1.2rem;
   margin-bottom: 2.2rem;
   padding: 1rem 0;
-  border-top: 1px solid var(--border-subtle);
-  border-bottom: 1px solid var(--border-subtle);
+  border-top: 1px solid var(--border-peach);
+  border-bottom: 1px solid var(--border-peach);
 }
 
 .hero-badge-item {
-  font-family: var(--font-subheading);
-  font-size: 0.76rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--color-text-muted);
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--color-black);
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.45rem;
 }
 
 .hero-badge-item svg {
-  color: var(--color-accent);
+  color: var(--color-coral);
 }
 
 .hero-cta-group {
@@ -558,10 +600,11 @@ ul {
 
 .hero-image-wrapper {
   position: relative;
-  border-radius: 3px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 20px 45px rgba(29, 30, 27, 0.09);
+  box-shadow: 0 20px 50px rgba(237, 106, 91, 0.16);
   aspect-ratio: 4 / 5;
+  border: 4px solid #FFFFFF;
 }
 
 .hero-image-wrapper img {
@@ -575,55 +618,35 @@ ul {
   transform: scale(1.02);
 }
 
-/* Floating decorative badge on hero */
+/* Floating Official Circular Badge on Hero */
 .hero-floating-badge {
   position: absolute;
-  bottom: -25px;
-  left: -25px;
-  background-color: var(--color-bg);
-  border: 1px solid var(--border-subtle);
-  padding: 1.2rem 1.5rem;
-  border-radius: 3px;
-  box-shadow: var(--shadow-soft);
-  max-width: 220px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
+  bottom: -30px;
+  left: -30px;
+  width: 130px;
+  height: 130px;
   z-index: 3;
+  transition: transform 0.4s ease;
+  filter: drop-shadow(0 10px 20px rgba(18, 18, 18, 0.12));
 }
 
-.hero-floating-badge .badge-title {
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+.hero-floating-badge:hover {
+  transform: rotate(8deg) scale(1.05);
 }
 
-.hero-floating-badge .badge-sub {
-  font-family: var(--font-subheading);
-  font-size: 0.72rem;
-  letter-spacing: 0.1em;
-  color: var(--color-accent);
-}
-
-/* Decorative watermark logo */
-.hero-watermark {
-  position: absolute;
-  top: -10%;
-  right: -5%;
-  width: 260px;
-  opacity: 0.08;
-  pointer-events: none;
-  z-index: 0;
+.hero-floating-badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* ==========================================================================
-   TRIO PILLARS SECTION ("PRACTICE. FEEL. GLOW." -> "CORPO. MENTE. RESPIRO.")
+   TRIO PILLARS SECTION ("CORPO. MENTE. RESPIRO.")
    ========================================================================== */
 .trio-section {
   padding-top: var(--section-padding-y);
   padding-bottom: var(--section-padding-y);
-  background-color: #FFFFFF;
+  background-color: var(--color-soft-peach-surface);
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
 }
@@ -649,8 +672,8 @@ ul {
 }
 
 .trio-card {
-  background-color: var(--color-bg);
-  padding: clamp(2rem, 3.5vw, 3rem) clamp(1.5rem, 2.5vw, 2rem);
+  background-color: #FFFFFF;
+  padding: clamp(2rem, 3.5vw, 3rem) clamp(1.5rem, 2.5vw, 2.2rem);
   border: 1px solid var(--border-card);
   border-radius: var(--border-radius);
   transition: var(--transition);
@@ -658,12 +681,13 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  box-shadow: var(--shadow-soft);
 }
 
 .trio-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-hover);
-  border-color: var(--color-light-accent);
+  border-color: var(--color-coral);
 }
 
 .trio-card-top {
@@ -671,24 +695,30 @@ ul {
 }
 
 .trio-number {
-  font-family: var(--font-subheading);
-  font-size: 0.75rem;
-  letter-spacing: 0.25em;
-  color: var(--color-accent);
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--color-coral);
   margin-bottom: 0.8rem;
   display: block;
 }
 
+.trio-card:nth-child(2) .trio-number {
+  color: var(--color-ocean);
+}
+
+.trio-card:nth-child(3) .trio-number {
+  color: var(--color-pearl-aqua);
+}
+
 .trio-card h3 {
-  font-family: var(--font-heading);
-  font-size: 1.8rem;
-  letter-spacing: 0.15em;
+  font-size: 1.55rem;
   margin-bottom: 1rem;
-  color: var(--color-text);
 }
 
 .trio-card p {
-  font-size: 0.96rem;
+  font-size: 0.98rem;
   color: var(--color-text-muted);
   line-height: 1.75;
 }
@@ -696,19 +726,27 @@ ul {
 .trio-card-footer {
   margin-top: 1.5rem;
   padding-top: 1.2rem;
-  border-top: 1px solid rgba(29, 30, 27, 0.06);
+  border-top: 1px solid rgba(18, 18, 18, 0.06);
 }
 
 .trio-link {
-  font-family: var(--font-subheading);
-  font-size: 0.74rem;
-  font-weight: 600;
-  letter-spacing: 0.2em;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--color-text);
+  color: var(--color-coral);
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.trio-card:nth-child(2) .trio-link {
+  color: var(--color-ocean);
+}
+
+.trio-card:nth-child(3) .trio-link {
+  color: var(--color-ocean);
 }
 
 .trio-link svg {
@@ -716,11 +754,11 @@ ul {
 }
 
 .trio-link:hover svg {
-  transform: translateX(4px);
+  transform: translateX(5px);
 }
 
 /* ==========================================================================
-   COURSES & OFFERINGS SECTION (Filterable & Detailed Cards)
+   COURSES & OFFERINGS SECTION
    ========================================================================== */
 .courses-section {
   padding-top: var(--section-padding-y);
@@ -728,38 +766,39 @@ ul {
   background-color: var(--color-bg);
 }
 
-/* Category Filter Tabs (PFG Minimalist Tabs) */
+/* Category Filter Tabs */
 .filter-tabs {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.75rem 1.2rem;
+  gap: 0.75rem 1rem;
   margin-bottom: 3.5rem;
 }
 
 .filter-btn {
-  background: transparent;
-  border: 1px solid var(--border-subtle);
+  background: #FFFFFF;
+  border: 1px solid var(--border-peach);
   padding: 0.65rem 1.4rem;
-  font-family: var(--font-subheading);
-  font-size: 0.74rem;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
   font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  letter-spacing: 0.02em;
   color: var(--color-text-muted);
-  border-radius: 20px;
+  border-radius: 30px;
   cursor: pointer;
   transition: var(--transition);
+  box-shadow: 0 2px 8px rgba(18, 18, 18, 0.02);
 }
 
 .filter-btn:hover,
 .filter-btn.active {
-  background-color: var(--color-text);
-  color: var(--color-bg);
-  border-color: var(--color-text);
+  background-color: var(--color-coral);
+  color: #FFFFFF;
+  border-color: var(--color-coral);
+  box-shadow: 0 4px 16px rgba(237, 106, 91, 0.28);
 }
 
-/* Editorial Feature Card (Hatha Donna & Gravidanza) */
+/* Editorial Feature Card */
 .course-card-editorial {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -774,10 +813,7 @@ ul {
 
 .course-card-editorial:hover {
   box-shadow: var(--shadow-hover);
-}
-
-.course-card-editorial.reverse {
-  grid-template-columns: 1fr 1fr;
+  border-color: var(--border-peach);
 }
 
 .course-card-editorial.reverse .course-card-image {
@@ -790,7 +826,7 @@ ul {
 
 .course-card-image {
   position: relative;
-  min-height: 380px;
+  min-height: 400px;
   overflow: hidden;
 }
 
@@ -809,16 +845,16 @@ ul {
   position: absolute;
   top: 1.25rem;
   left: 1.25rem;
-  background-color: rgba(247, 244, 240, 0.92);
-  backdrop-filter: blur(8px);
-  padding: 0.4rem 0.9rem;
-  font-family: var(--font-subheading);
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
+  background-color: #FFFFFF;
+  padding: 0.4rem 0.95rem;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-accent);
-  border-radius: 2px;
+  color: var(--color-coral);
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(18, 18, 18, 0.08);
 }
 
 .course-card-body {
@@ -829,17 +865,16 @@ ul {
 }
 
 .course-card-body h3 {
-  font-family: var(--font-heading);
-  font-size: clamp(1.5rem, 2.5vw, 2rem);
-  letter-spacing: 0.12em;
+  font-size: clamp(1.6rem, 2.5vw, 2.1rem);
   margin-bottom: 0.6rem;
+  color: var(--color-black);
 }
 
 .course-card-subtitle {
-  font-family: var(--font-serif);
-  font-style: italic;
+  font-family: var(--font-heading);
   font-size: 1.05rem;
-  color: var(--color-accent);
+  font-weight: 500;
+  color: var(--color-coral);
   margin-bottom: 1.25rem;
   display: block;
 }
@@ -855,13 +890,13 @@ ul {
   display: flex;
   align-items: flex-start;
   gap: 0.75rem;
-  font-size: 0.94rem;
-  color: var(--color-text);
-  line-height: 1.6;
+  font-size: 0.96rem;
+  color: var(--color-text-body);
+  line-height: 1.65;
 }
 
 .benefit-item svg {
-  color: var(--color-accent);
+  color: var(--color-coral);
   flex-shrink: 0;
   margin-top: 3px;
 }
@@ -874,15 +909,15 @@ ul {
 }
 
 .meta-tag {
-  background-color: var(--color-bg);
-  padding: 0.35rem 0.8rem;
-  font-family: var(--font-subheading);
-  font-size: 0.72rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color-text-muted);
-  border-radius: 2px;
-  border: 1px solid var(--border-subtle);
+  background-color: var(--color-soft-peach-surface);
+  padding: 0.35rem 0.85rem;
+  font-family: var(--font-heading);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--color-black);
+  border-radius: 20px;
+  border: 1px solid var(--border-peach);
 }
 
 /* Secondary 2-Column & 3-Column Courses Grid */
@@ -912,8 +947,9 @@ ul {
 }
 
 .course-box:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
   box-shadow: var(--shadow-hover);
+  border-color: var(--border-peach);
 }
 
 .course-box-image {
@@ -942,27 +978,25 @@ ul {
 }
 
 .course-box-content h4 {
-  font-size: 0.75rem;
+  font-size: 0.76rem;
   margin-bottom: 0.4rem;
 }
 
 .course-box-content h3 {
-  font-family: var(--font-heading);
   font-size: 1.45rem;
-  letter-spacing: 0.1em;
   margin-bottom: 0.5rem;
 }
 
 .course-box-content .subtitle {
-  font-family: var(--font-serif);
-  font-style: italic;
+  font-family: var(--font-heading);
   font-size: 0.95rem;
-  color: var(--color-accent);
+  font-weight: 500;
+  color: var(--color-coral);
   margin-bottom: 1rem;
 }
 
 .course-box-content p {
-  font-size: 0.92rem;
+  font-size: 0.94rem;
   margin-bottom: 1.25rem;
   line-height: 1.7;
 }
@@ -975,22 +1009,21 @@ ul {
 }
 
 .age-chip {
-  background-color: var(--color-soft-sage);
-  color: var(--color-accent);
-  font-family: var(--font-subheading);
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  padding: 0.25rem 0.6rem;
-  border-radius: 2px;
+  background-color: var(--color-soft-peach);
+  color: var(--color-black);
+  font-family: var(--font-heading);
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 12px;
 }
 
 /* ==========================================================================
-   PHILOSOPHICAL QUOTES BANNER (Inspired by PFG Section 3 & Quotes)
+   PHILOSOPHICAL QUOTES BANNER
    ========================================================================== */
 .quotes-section {
   position: relative;
-  background-color: var(--color-bg-secondary);
+  background-color: var(--color-soft-peach);
   padding: clamp(4.5rem, 7vw, 6.5rem) 0;
   text-align: center;
   border-top: 1px solid var(--border-subtle);
@@ -999,7 +1032,7 @@ ul {
 }
 
 .quotes-carousel {
-  max-width: 820px;
+  max-width: 840px;
   margin: 0 auto;
   position: relative;
   min-height: 180px;
@@ -1027,21 +1060,21 @@ ul {
 }
 
 .quote-text {
-  font-family: var(--font-serif);
-  font-size: clamp(1.4rem, 2.5vw, 1.95rem);
-  font-style: italic;
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 600;
   line-height: 1.5;
-  color: var(--color-text);
+  color: var(--color-black);
   margin-bottom: 1.2rem;
 }
 
 .quote-author {
-  font-family: var(--font-subheading);
-  font-size: 0.8rem;
-  letter-spacing: 0.25em;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--color-accent);
-  font-weight: 600;
+  color: var(--color-coral);
+  font-weight: 700;
 }
 
 .quote-dots {
@@ -1052,16 +1085,16 @@ ul {
 }
 
 .quote-dot {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background-color: var(--border-subtle);
+  background-color: rgba(18, 18, 18, 0.18);
   cursor: pointer;
   transition: var(--transition);
 }
 
 .quote-dot.active {
-  background-color: var(--color-text);
+  background-color: var(--color-coral);
   transform: scale(1.3);
 }
 
@@ -1088,9 +1121,10 @@ ul {
 
 .about-image-card {
   position: relative;
-  border-radius: 3px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 16px 40px rgba(29, 30, 27, 0.08);
+  box-shadow: 0 16px 45px rgba(237, 106, 91, 0.15);
+  border: 4px solid #FFFFFF;
 }
 
 .about-image-card img {
@@ -1104,21 +1138,21 @@ ul {
   position: absolute;
   bottom: 20px;
   right: -20px;
-  background-color: var(--color-bg);
-  border: 1px solid var(--border-subtle);
-  padding: 1.2rem 1.6rem;
-  border-radius: 3px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-peach);
+  padding: 1.1rem 1.5rem;
+  border-radius: 30px;
   box-shadow: var(--shadow-soft);
 }
 
 .about-signature-badge p {
   margin: 0;
-  font-family: var(--font-subheading);
-  font-size: 0.76rem;
-  letter-spacing: 0.16em;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-accent);
-  font-weight: 600;
+  color: var(--color-coral);
+  font-weight: 700;
 }
 
 .about-content h4 {
@@ -1130,8 +1164,8 @@ ul {
 }
 
 .about-lead {
-  font-size: 1.1rem;
-  color: var(--color-text);
+  font-size: 1.15rem;
+  color: var(--color-black);
   line-height: 1.85;
   margin-bottom: 1.5rem;
 }
@@ -1140,12 +1174,12 @@ ul {
 .accreditations-title {
   margin-top: 2.5rem;
   margin-bottom: 1.2rem;
-  font-family: var(--font-subheading);
-  font-size: 0.82rem;
-  letter-spacing: 0.2em;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--color-text);
-  font-weight: 600;
+  color: var(--color-black);
+  font-weight: 700;
   display: flex;
   align-items: center;
   gap: 0.8rem;
@@ -1155,7 +1189,7 @@ ul {
   content: '';
   flex-grow: 1;
   height: 1px;
-  background-color: var(--border-subtle);
+  background-color: var(--border-peach);
 }
 
 .accreditations-grid {
@@ -1166,31 +1200,31 @@ ul {
 
 .accreditation-item {
   background-color: #FFFFFF;
-  padding: 1.1rem 1.25rem;
-  border-radius: 3px;
+  padding: 1.2rem 1.35rem;
+  border-radius: var(--border-radius);
   border: 1px solid var(--border-card);
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   color: var(--color-text-muted);
-  line-height: 1.5;
+  line-height: 1.6;
+  box-shadow: 0 2px 8px rgba(18, 18, 18, 0.02);
 }
 
 .accreditation-item strong {
   display: block;
-  color: var(--color-text);
-  font-family: var(--font-subheading);
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-bottom: 0.25rem;
+  color: var(--color-black);
+  font-family: var(--font-heading);
+  font-size: 0.84rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
 }
 
 /* ==========================================================================
-   TESTIMONIALS / RECENSIONI SECTION
+   TESTIMONIALS SECTION
    ========================================================================== */
 .testimonials-section {
   padding-top: var(--section-padding-y);
   padding-bottom: var(--section-padding-y);
-  background-color: #FFFFFF;
+  background-color: var(--color-soft-peach-surface);
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
 }
@@ -1202,7 +1236,7 @@ ul {
 }
 
 .testimonial-card {
-  background-color: var(--color-bg);
+  background-color: #FFFFFF;
   padding: clamp(1.8rem, 3vw, 2.5rem);
   border-radius: var(--border-radius);
   border: 1px solid var(--border-card);
@@ -1210,24 +1244,27 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   transition: var(--transition);
+  box-shadow: var(--shadow-soft);
 }
 
 .testimonial-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
   box-shadow: var(--shadow-hover);
+  border-color: var(--border-peach);
 }
 
 .testimonial-stars {
-  color: var(--color-gold);
+  color: var(--color-coral);
   margin-bottom: 1.2rem;
   display: flex;
   gap: 3px;
+  font-size: 1.1rem;
 }
 
 .testimonial-text {
-  font-size: 0.94rem;
+  font-size: 0.96rem;
   line-height: 1.75;
-  color: var(--color-text-muted);
+  color: var(--color-text-body);
   font-style: italic;
   margin-bottom: 1.5rem;
 }
@@ -1236,40 +1273,39 @@ ul {
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  border-top: 1px solid rgba(29, 30, 27, 0.06);
+  border-top: 1px solid rgba(18, 18, 18, 0.06);
   padding-top: 1rem;
 }
 
 .author-avatar {
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background-color: var(--color-light-accent);
-  color: var(--color-accent);
+  background-color: var(--color-soft-peach);
+  color: var(--color-coral);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-subheading);
-  font-size: 0.82rem;
-  font-weight: 600;
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  font-weight: 700;
 }
 
 .author-info h5 {
-  font-family: var(--font-subheading);
-  font-size: 0.82rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-weight: 600;
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  font-weight: 700;
   margin-bottom: 0.2rem;
+  color: var(--color-black);
 }
 
 .author-info span {
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   color: var(--color-text-light);
 }
 
 /* ==========================================================================
-   LOCATIONS / LE SEDI SECTION (Lanzo, Ciriè, Robassomero, Venaria)
+   LOCATIONS SECTION (Lanzo, Ciriè, Robassomero, Venaria)
    ========================================================================== */
 .locations-section {
   padding-top: var(--section-padding-y);
@@ -1288,66 +1324,64 @@ ul {
   background-color: #FFFFFF;
   border: 1px solid var(--border-card);
   border-radius: var(--border-radius);
-  padding: 1.8rem 1.4rem;
+  padding: 2rem 1.4rem;
   text-align: center;
   transition: var(--transition);
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: var(--shadow-soft);
 }
 
 .location-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--color-accent);
+  transform: translateY(-5px);
+  border-color: var(--color-coral);
   box-shadow: var(--shadow-hover);
 }
 
 .location-icon {
-  width: 52px;
-  height: 52px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
-  background-color: var(--color-bg);
-  border: 1px solid var(--border-subtle);
+  background-color: var(--color-soft-peach-surface);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.2rem;
-  color: var(--color-accent);
+  color: var(--color-coral);
 }
 
 .location-card h3 {
-  font-family: var(--font-heading);
   font-size: 1.35rem;
-  letter-spacing: 0.12em;
   margin-bottom: 0.4rem;
 }
 
 .location-card p {
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   color: var(--color-text-muted);
   margin-bottom: 1.2rem;
   line-height: 1.6;
 }
 
 .location-tag {
-  font-family: var(--font-subheading);
-  font-size: 0.68rem;
-  letter-spacing: 0.14em;
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--color-accent);
-  background-color: var(--color-soft-sage);
-  padding: 0.25rem 0.65rem;
-  border-radius: 2px;
-  font-weight: 600;
+  color: var(--color-ocean);
+  background-color: rgba(67, 86, 166, 0.08);
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 700;
 }
 
 /* ==========================================================================
-   CALL TO ACTION BANNER (Dark Accent / PFG Style Section 6)
+   CALL TO ACTION BANNER (Ocean Twilight from Brand Book p.3 & p.11)
    ========================================================================== */
 .cta-banner-section {
   position: relative;
-  background-color: var(--color-dark-section);
-  color: var(--color-dark-section-text);
+  background-color: var(--color-ocean);
+  color: #FFFFFF;
   padding: clamp(5rem, 8vw, 7.5rem) 0;
   text-align: center;
   overflow: hidden;
@@ -1359,34 +1393,33 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.15;
+  opacity: 0.14;
   background-image: url('assets/images/studio-space.jpg');
   background-size: cover;
   background-position: center;
-  filter: grayscale(80%);
 }
 
 .cta-banner-content {
   position: relative;
   z-index: 2;
-  max-width: 800px;
+  max-width: 820px;
   margin: 0 auto;
 }
 
 .cta-banner-section h4 {
-  color: var(--color-light-accent);
+  color: var(--color-pearl-aqua);
   margin-bottom: 1rem;
 }
 
 .cta-banner-section h2 {
   color: #FFFFFF;
-  font-size: clamp(1.9rem, 3.8vw, 2.9rem);
+  font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: 1.5rem;
 }
 
 .cta-banner-section p {
-  color: rgba(247, 244, 240, 0.85);
-  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.15rem;
   line-height: 1.8;
   margin-bottom: 2.5rem;
 }
@@ -1398,15 +1431,16 @@ ul {
   gap: 1.2rem;
 }
 
-.btn-banner-white {
-  background-color: #FFFFFF;
-  color: var(--color-text);
-  border: 1px solid #FFFFFF;
+.btn-banner-peach {
+  background-color: var(--color-soft-peach);
+  color: var(--color-black);
+  border: 2px solid var(--color-soft-peach);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
 
-.btn-banner-white:hover {
+.btn-banner-peach:hover {
   background-color: transparent;
-  color: #FFFFFF;
+  color: var(--color-soft-peach);
   transform: translateY(-2px);
 }
 
@@ -1445,46 +1479,47 @@ ul {
   align-items: center;
   gap: 1.2rem;
   transition: var(--transition);
+  box-shadow: var(--shadow-soft);
 }
 
 .channel-card:hover {
-  border-color: var(--color-accent);
-  transform: translateX(4px);
+  border-color: var(--color-coral);
+  transform: translateX(5px);
+  box-shadow: var(--shadow-hover);
 }
 
 .channel-icon {
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  background-color: var(--color-bg);
+  background-color: var(--color-soft-peach-surface);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-accent);
+  color: var(--color-coral);
   flex-shrink: 0;
 }
 
 .channel-details h5 {
-  font-family: var(--font-subheading);
-  font-size: 0.8rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-weight: 600;
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  font-weight: 700;
   margin-bottom: 0.2rem;
+  color: var(--color-black);
 }
 
 .channel-details a,
 .channel-details p {
   margin: 0;
-  font-size: 0.92rem;
+  font-size: 0.94rem;
   color: var(--color-text-muted);
 }
 
 .channel-details a:hover {
-  color: var(--color-accent);
+  color: var(--color-coral);
 }
 
-/* Forms (PFG Minimalist Form Style) */
+/* Form Styling */
 .contact-form-col {
   background-color: #FFFFFF;
   padding: clamp(2rem, 3.5vw, 3rem);
@@ -1494,9 +1529,7 @@ ul {
 }
 
 .contact-form-col h3 {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  letter-spacing: 0.12em;
+  font-size: 1.6rem;
   margin-bottom: 0.6rem;
 }
 
@@ -1506,12 +1539,10 @@ ul {
 
 .form-label {
   display: block;
-  font-family: var(--font-subheading);
-  font-size: 0.74rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: var(--color-text);
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-black);
   margin-bottom: 0.4rem;
 }
 
@@ -1519,19 +1550,19 @@ ul {
   width: 100%;
   padding: 0.85rem 1rem;
   font-family: var(--font-body);
-  font-size: 0.95rem;
-  color: var(--color-text);
-  background-color: var(--color-bg);
+  font-size: 0.96rem;
+  color: var(--color-black);
+  background-color: var(--color-soft-peach-light);
   border: 1px solid var(--border-subtle);
-  border-radius: 2px;
+  border-radius: 6px;
   transition: var(--transition);
 }
 
 .form-control:focus {
   outline: none;
-  border-color: var(--color-accent);
+  border-color: var(--color-coral);
   background-color: #FFFFFF;
-  box-shadow: 0 0 0 3px rgba(90, 102, 89, 0.12);
+  box-shadow: 0 0 0 3px rgba(237, 106, 91, 0.15);
 }
 
 textarea.form-control {
@@ -1540,51 +1571,51 @@ textarea.form-control {
 }
 
 .form-privacy-note {
-  font-size: 0.76rem;
+  font-size: 0.78rem;
   color: var(--color-text-light);
   line-height: 1.5;
   margin-top: 0.8rem;
   margin-bottom: 1.2rem;
 }
 
-/* Newsletter Section (Horizontal minimal box) */
+/* Newsletter Section */
 .newsletter-card {
   margin-top: 4.5rem;
-  background-color: var(--color-light-accent);
+  background-color: var(--color-soft-peach);
   border-radius: var(--border-radius);
   padding: clamp(2rem, 4vw, 3.5rem);
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 2.5rem;
   align-items: center;
+  border: 1px solid var(--border-peach);
 }
 
 .newsletter-card h3 {
-  font-family: var(--font-heading);
   font-size: 1.8rem;
-  letter-spacing: 0.12em;
+  color: var(--color-black);
   margin-bottom: 0.5rem;
 }
 
 .newsletter-card p {
-  font-size: 0.92rem;
-  color: var(--color-text);
+  font-size: 0.95rem;
+  color: var(--color-text-body);
   margin-bottom: 0;
 }
 
 .newsletter-form-inline {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.6rem;
 }
 
 .newsletter-form-inline input {
   flex-grow: 1;
   background-color: #FFFFFF;
-  border: 1px solid rgba(29, 30, 27, 0.15);
+  border: 1px solid var(--border-subtle);
 }
 
 /* ==========================================================================
-   FOOTER (PFG 4-Column Layout)
+   FOOTER (4 Columns)
    ========================================================================== */
 .footer {
   background-color: #FFFFFF;
@@ -1602,14 +1633,14 @@ textarea.form-control {
 }
 
 .footer-col h4 {
-  font-size: 0.8rem;
-  letter-spacing: 0.22em;
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
   margin-bottom: 1.25rem;
-  color: var(--color-text);
+  color: var(--color-black);
 }
 
 .footer-col p {
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   line-height: 1.7;
 }
 
@@ -1620,13 +1651,15 @@ textarea.form-control {
 }
 
 .footer-nav a {
-  font-size: 0.86rem;
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  font-weight: 500;
   color: var(--color-text-muted);
   transition: var(--transition);
 }
 
 .footer-nav a:hover {
-  color: var(--color-accent);
+  color: var(--color-coral);
   transform: translateX(3px);
 }
 
@@ -1637,21 +1670,21 @@ textarea.form-control {
 }
 
 .social-icon-btn {
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: 1px solid var(--border-subtle);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-text);
+  color: var(--color-black);
   transition: var(--transition);
 }
 
 .social-icon-btn:hover {
-  background-color: var(--color-text);
+  background-color: var(--color-coral);
   color: #FFFFFF;
-  border-color: var(--color-text);
+  border-color: var(--color-coral);
 }
 
 .footer-bottom {
@@ -1662,7 +1695,7 @@ textarea.form-control {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   color: var(--color-text-light);
 }
 
@@ -1672,7 +1705,7 @@ textarea.form-control {
 }
 
 /* ==========================================================================
-   FLOATING WHATSAPP BUTTON (Requested directly in content.md)
+   FLOATING WHATSAPP BUTTON
    ========================================================================== */
 .floating-whatsapp {
   position: fixed;
@@ -1686,12 +1719,12 @@ textarea.form-control {
 
 .floating-whatsapp-tooltip {
   background-color: #FFFFFF;
-  color: var(--color-text);
-  font-family: var(--font-subheading);
-  font-size: 0.74rem;
+  color: var(--color-black);
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
-  padding: 0.5rem 0.9rem;
+  letter-spacing: 0.02em;
+  padding: 0.5rem 1rem;
   border-radius: 20px;
   box-shadow: 0 4px 18px rgba(0,0,0,0.12);
   border: 1px solid var(--border-card);
@@ -1708,8 +1741,8 @@ textarea.form-control {
 }
 
 .floating-whatsapp-btn {
-  width: 56px;
-  height: 56px;
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
   background-color: #25D366;
   color: #FFFFFF;
@@ -1728,7 +1761,7 @@ textarea.form-control {
 }
 
 /* ==========================================================================
-   MODAL / POPUP (For Lezione di Prova / Prenotazione)
+   MODAL / POPUP
    ========================================================================== */
 .modal-overlay {
   position: fixed;
@@ -1736,8 +1769,8 @@ textarea.form-control {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(29, 30, 27, 0.6);
-  backdrop-filter: blur(5px);
+  background-color: rgba(18, 18, 18, 0.65);
+  backdrop-filter: blur(6px);
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -1754,15 +1787,16 @@ textarea.form-control {
 }
 
 .modal-box {
-  background-color: var(--color-bg);
-  border-radius: 4px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
   max-width: 580px;
   width: 100%;
   padding: clamp(2rem, 4vw, 3rem);
   position: relative;
-  box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+  box-shadow: 0 25px 60px rgba(18, 18, 18, 0.25);
   transform: translateY(20px);
   transition: transform 0.3s ease;
+  border: 1px solid var(--border-peach);
 }
 
 .modal-overlay.is-active .modal-box {
@@ -1776,21 +1810,21 @@ textarea.form-control {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 1.4rem;
-  color: var(--color-text);
+  font-size: 1.5rem;
+  color: var(--color-black);
   opacity: 0.6;
   transition: var(--transition);
 }
 
 .modal-close:hover {
   opacity: 1;
+  color: var(--color-coral);
 }
 
 .modal-box h3 {
-  font-family: var(--font-heading);
   font-size: 1.8rem;
-  letter-spacing: 0.12em;
   margin-bottom: 0.6rem;
+  color: var(--color-black);
 }
 
 .modal-tabs {
@@ -1805,21 +1839,19 @@ textarea.form-control {
 .modal-tab-btn {
   background: none;
   border: none;
-  font-family: var(--font-subheading);
-  font-size: 0.76rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  font-weight: 600;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 700;
   color: var(--color-text-muted);
   cursor: pointer;
-  padding: 0.4rem 0.8rem;
-  border-radius: 2px;
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
   transition: var(--transition);
 }
 
 .modal-tab-btn.active {
-  background-color: var(--color-text);
-  color: var(--color-bg);
+  background-color: var(--color-coral);
+  color: #FFFFFF;
 }
 
 /* Toast Notification */
@@ -1828,13 +1860,13 @@ textarea.form-control {
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%) translateY(100px);
-  background-color: var(--color-text);
-  color: var(--color-bg);
+  background-color: var(--color-black);
+  color: #FFFFFF;
   padding: 0.9rem 1.8rem;
   border-radius: 30px;
-  font-family: var(--font-subheading);
-  font-size: 0.82rem;
-  letter-spacing: 0.1em;
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  font-weight: 600;
   box-shadow: 0 10px 30px rgba(0,0,0,0.25);
   z-index: 2000;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -1848,7 +1880,7 @@ textarea.form-control {
 }
 
 /* ==========================================================================
-   RESPONSIVE DESIGN (Matching PFG Breakpoints)
+   RESPONSIVE DESIGN
    ========================================================================== */
 @media screen and (max-width: 1024px) {
   .nav-menu {
@@ -1932,8 +1964,9 @@ textarea.form-control {
   }
   .hero-floating-badge {
     left: 10px;
-    bottom: -15px;
-    padding: 0.9rem 1.1rem;
+    bottom: -20px;
+    width: 100px;
+    height: 100px;
   }
   .hero-cta-group {
     flex-direction: column;
