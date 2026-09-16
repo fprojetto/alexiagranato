@@ -1,0 +1,19 @@
+{
+  "name": "alexiagranatoyoga",
+  "version": "1.0.0",
+  "description": "Sito internet per Alexia Granato Yoga & Maternità ispirato allo stile e layout di Practice Feel Glow",
+  "scripts": {
+    "start": "npx serve . -p 3000",
+    "dev": "npx serve . -p 3000",
+    "preview": "python3 -m http.server 3000"
+  },
+  "keywords": [
+    "yoga",
+    "maternita",
+    "gravidanza",
+    "hatha-yoga",
+    "sviluppo-infantile"
+  ],
+  "author": "Alexia Granato",
+  "license": "MIT"
+}

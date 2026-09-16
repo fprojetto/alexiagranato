@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexia Granato Yoga | Corsi Donna, Maternità, Gravidanza e Sviluppo Infantile</title>
+  <meta name="description" content="Trova il tuo spazio di benessere attraverso il movimento consapevole, il respiro e la condivisione. Corsi di Hatha Yoga Donna, Gravidanza, Post Parto Mamma-Bebè e Sviluppo Infantile a Lanzo, Ciriè, Robassomero e Venaria.">
+  <meta name="keywords" content="Alexia Granato Yoga, Yoga Gravidanza Ciriè, Hatha Yoga Donna Lanzo, Sviluppo Infantile Robassomero, Yoga Post Parto Venaria, Blessingway, Yogalates">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alexia Granato Yoga & Maternità | Rallenta. Ascoltati. Custodisci il tuo equilibrio.">
+  <meta property="og:description" content="Movimento consapevole, respiro e condivisione profonda per la donna, la gravidanza e l'infanzia a Lanzo, Ciriè, Robassomero e Venaria.">
+  <meta property="og:image" content="assets/images/hero.jpg">
+  <meta property="og:url" content="https://alexiagranatoyoga.it">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span>🌿 <strong>Percorsi 2026 attivi:</strong> Nuovi corsi a Lanzo, Ciriè, Robassomero e Venaria.</span>
+    <a href="#contatti" onclick="openBookingModal('Hatha Yoga')">Prenota la tua lezione di prova &rarr;</a>
+    <button class="bar-close" aria-label="Chiudi annuncio">&times;</button>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container header-inner">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo" aria-label="Alexia Granato Yoga Home">
+        <img src="assets/images/logo.svg" alt="Alexia Granato Yoga & Maternità">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" aria-label="Navigazione Principale">
+        <a href="#corsi-donna" class="nav-link">Corsi Donna</a>
+        <a href="#maternita" class="nav-link">Maternità & Nascita</a>
+        <a href="#sviluppo-infantile" class="nav-link">Sviluppo Infantile</a>
+        <a href="#percorsi-esclusivi" class="nav-link">Percorsi Esclusivi</a>
+        <a href="#chi-sono" class="nav-link">Chi Sono</a>
+        <a href="#sedi" class="nav-link">Le Sedi</a>
+        <a href="#contatti" class="nav-link">Contatti</a>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="header-actions">
+        <a href="https://wa.me/393792631325?text=Ciao%20Alexia,%20vorrei%20prenotare%20una%20lezione%20di%20prova" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+          Prenota Prova
+        </a>
+        <button class="burger-btn" aria-label="Apri menu mobile">
+          <span class="burger-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" aria-hidden="true">
+    <nav class="mobile-menu-nav">
+      <a href="#corsi-donna">Corsi Donna</a>
+      <a href="#maternita">Maternità & Nascita</a>
+      <a href="#sviluppo-infantile">Sviluppo Infantile</a>
+      <a href="#percorsi-esclusivi">Percorsi Esclusivi</a>
+      <a href="#chi-sono">Chi Sono</a>
+      <a href="#sedi">Le Sedi</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <div style="display: flex; flex-direction: column; gap: 0.8rem; width: 100%; max-width: 280px;">
+      <a href="https://wa.me/393792631325" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        WhatsApp Diretto
+      </a>
+      <button onclick="openBookingModal()" class="btn btn-outline btn-sm">Prenota Prova</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         SEZIONE 1: EROE / COPERTINA PRINCIPALE
+         ========================================================================== -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-overline">
+            <span>Lanzo &bull; Ciriè &bull; Robassomero &bull; Venaria</span>
+          </div>
+          <h1 class="hero-title">Rallenta. Ascoltati. Custodisci il tuo equilibrio.</h1>
+          <p class="hero-lead">
+            Trova il tuo spazio di benessere attraverso il movimento consapevole, il respiro e la condivisione profonda.
+            Praticare significa prendersi del tempo per sé, rilasciare le tensioni quotidiane e regolare il sistema nervoso. Qui integreremo <strong>corpo, mente e respiro</strong> per aiutarti a ritrovare un profondo benessere psicofisico.
+          </p>
+
+          <p style="font-size: 0.98rem; margin-bottom: 1.8rem; color: var(--color-text);">
+            <em>Che tu sia alla tua prima esperienza o che tu abbia già praticato yoga, troverai un ambiente sicuro, accogliente e rispettoso dei tuoi tempi.</em>
+          </p>
+
+          <div class="hero-badges">
+            <div class="hero-badge-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <span>Diploma Internazionale BWY</span>
+            </div>
+            <div class="hero-badge-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              <span>Specialista Maternità & Infanzia</span>
+            </div>
+            <div class="hero-badge-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Gruppi Piccoli & Percorsi 1-to-1</span>
+            </div>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#corsi-donna" class="btn btn-primary">Scopri i Corsi e i Percorsi</a>
+            <a href="https://wa.me/393792631325?text=Ciao%20Alexia,%20vorrei%20informazioni%20sui%20tuoi%20corsi" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              Scrivimi su WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <img src="assets/images/hero.jpg" alt="Pratica di yoga consapevole in studio luminoso" width="800" height="1000">
+          </div>
+          <div class="hero-floating-badge">
+            <span class="badge-title">Spazio Protetto</span>
+            <span class="badge-sub">Lezioni di prova & percorsi personalizzati</span>
+          </div>
+          <img src="assets/images/brand-mark-1.svg" class="hero-watermark" alt="" aria-hidden="true">
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEZIONE TRIO: CORPO. MENTE. RESPIRO. (Stile Practice Feel Glow)
+         ========================================================================== -->
+    <section class="trio-section">
+      <div class="container">
+        <div class="section-header">
+          <h4>La Nostra Filosofia</h4>
+          <h2>Corpo. Mente. Respiro.</h2>
+          <p>Un metodo basato sull'ascolto di sé, sul movimento consapevole e sull'integrazione neurofisiologica, pensato specificamente per la donna e le tappe fondamentali della vita.</p>
+        </div>
+
+        <div class="trio-grid">
+          <!-- Card 1: Corpo -->
+          <div class="trio-card">
+            <div class="trio-card-top">
+              <span class="trio-number">01 / CORPO</span>
+              <h3>Movimento Consapevole</h3>
+              <p>Rilasciare le tensioni quotidiane, alleviare il mal di schiena e ritrovare flessibilità, stabilità e radicamento con il metodo Hatha Yoga e la precisione posturale del metodo Yogalates.</p>
+            </div>
+            <div class="trio-card-footer">
+              <a href="#corsi-donna" class="trio-link">
+                Scopri Hatha Yoga
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Mente -->
+          <div class="trio-card">
+            <div class="trio-card-top">
+              <span class="trio-number">02 / MENTE</span>
+              <h3>Regolazione & Calma</h3>
+              <p>Regolare il sistema nervoso per ritrovare calma e centratura. Uno spazio di ascolto autentico e senza giudizio per sviluppare forza interiore, sicurezza e risvegliare l'intuizione femminile.</p>
+            </div>
+            <div class="trio-card-footer">
+              <a href="#chi-sono" class="trio-link">
+                La Mia Esperienza
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Respiro -->
+          <div class="trio-card">
+            <div class="trio-card-top">
+              <span class="trio-number">03 / RESPIRO</span>
+              <h3>Connessione & Vita</h3>
+              <p>Il respiro (pranayama) come bussola viva: strumenti pratici per la gestione del dolore durante il parto, rilassamento profondo e creazione di un legame intimo tra mamma e bebè.</p>
+            </div>
+            <div class="trio-card-footer">
+              <a href="#maternita" class="trio-link">
+                Corsi Maternità
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEZIONE CORSI E PERCORSI (Con Filtri e Layout Editoriale PFG)
+         ========================================================================== -->
+    <section class="courses-section" id="corsi">
+      <div class="container">
+        <div class="section-header">
+          <h4>I Percorsi di Pratica</h4>
+          <h2>Corsi per la Donna e la Famiglia</h2>
+          <p>Dall'Hatha Yoga al supporto per la gravidanza e i primi anni di vita: percorsi mirati per accompagnare con cura ogni trasformazione.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">Tutti i Corsi</button>
+          <button class="filter-btn" data-filter="donna">Hatha Yoga Donna</button>
+          <button class="filter-btn" data-filter="maternita">Maternità & Nascita</button>
+          <button class="filter-btn" data-filter="infanzia">Sviluppo Infantile (0-3 Anni)</button>
+          <button class="filter-btn" data-filter="esclusivi">Percorsi Esclusivi & Riti</button>
+        </div>
+
+        <!-- ==========================================
+             1. HATHA YOGA PER LA DONNA (Editorial Feature)
+             ========================================== -->
+        <div class="course-card-editorial" id="corsi-donna" data-category="donna">
+          <div class="course-card-image">
+            <img src="assets/images/hatha-donna.jpg" alt="Hatha Yoga per la Donna con Alexia" loading="lazy">
+            <span class="course-badge">Percorso Donna</span>
+          </div>
+          <div class="course-card-body">
+            <h4>Sezione Donna</h4>
+            <h3>Hatha Yoga per la Donna</h3>
+            <span class="course-card-subtitle">Un tempo protetto per te, in tutte le fasi della vita</span>
+            <p>
+              Un percorso fondato sull'ascolto di sé e sul movimento consapevole per aiutarti a ritrovare il respiro e la flessibilità. È un'occasione speciale per staccare la spina, liberare il corpo dalle tensioni accumulate e calmare la mente.
+            </p>
+
+            <div class="benefit-list">
+              <div class="benefit-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>I benefici principali:</strong> Svilupperai stabilità, forza interiore, fiducia in te stessa e risveglierai la tua intuizione naturale.</span>
+              </div>
+              <div class="benefit-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Integrazione Yogalates:</strong> Fluidità dello yoga unita al rinforzo profondo della muscolatura posturale.</span>
+              </div>
+            </div>
+
+            <div class="course-meta-tags">
+              <span class="meta-tag">Lezioni di Gruppo</span>
+              <span class="meta-tag">Individuali Personalizzate</span>
+              <span class="meta-tag">Tutti i Livelli</span>
+            </div>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <button onclick="openBookingModal('Hatha Yoga per la Donna')" class="btn btn-primary btn-sm">
+                Prenota la Lezione di Prova
+              </button>
+              <a href="https://wa.me/393792631325?text=Ciao%20Alexia,%20vorrei%20informazioni%20su%20Hatha%20Yoga%20Donna" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                Chiedi su WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==========================================
+             2. YOGA IN GRAVIDANZA E PER IL PARTO (Editorial Feature Reverse)
+             ========================================== -->
+        <div class="course-card-editorial reverse" id="maternita" data-category="maternita">
+          <div class="course-card-image">
+            <img src="assets/images/gravidanza.jpg" alt="Yoga in Gravidanza e per il Parto" loading="lazy">
+            <span class="course-badge">Maternità & Nascita</span>
+          </div>
+          <div class="course-card-body">
+            <h4>Accompagniamo la Vita che Cresce</h4>
+            <h3>🤰 Yoga in Gravidanza e per il Parto</h3>
+            <span class="course-card-subtitle">Un movimento dolce e un appuntamento settimanale tutto per te</span>
+            <p>
+              Un percorso delicato dedicato al tuo benessere attraverso il movimento, il respiro e il rilassamento profondo. Uno spazio per onorare il corpo che cambia e prepararsi all'evento della nascita.
+            </p>
+
+            <div class="benefit-list">
+              <div class="benefit-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Alleviare le tensioni</strong> e i piccoli fastidi fisici della dolce attesa (bacino, schiena, respirazione).</span>
+              </div>
+              <div class="benefit-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Regolare il sistema nervoso</strong> per ritrovare calma, centratura e profonda serenità.</span>
+              </div>
+              <div class="benefit-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Strumenti pratici e respiratori</strong> per gestire al meglio il dolore e il travaglio durante il parto.</span>
+              </div>
+              <div class="benefit-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Connessione intima e profonda</strong> con te stessa e con il tuo bimbo che cresce nel grembo.</span>
+              </div>
+            </div>
+
+            <p style="font-size: 0.88rem; color: var(--color-accent); font-style: italic; margin-bottom: 1.5rem;">
+              *Nota speciale: Il percorso include incontri specifici per la coppia e appuntamenti mirati in collaborazione con l'ostetrica.
+            </p>
+
+            <div class="course-meta-tags">
+              <span class="meta-tag">Dal 2° Trimestre</span>
+              <span class="meta-tag">Incontri di Coppia</span>
+              <span class="meta-tag">Collaborazione Ostetrica</span>
+            </div>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <button onclick="openBookingModal('Yoga in Gravidanza e per il Parto')" class="btn btn-primary btn-sm">
+                Richiedi il Calendario Corsi
+              </button>
+              <a href="https://wa.me/393792631325?text=Ciao%20Alexia,%20vorrei%20il%20calendario%20dello%20Yoga%20in%20Gravidanza" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                Scrivimi Direttamente
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==========================================
+             3. 2-COLUMN GRID: POST PARTO & SVILUPPO INFANTILE
+             ========================================== -->
+        <div class="courses-grid-2">
+          <!-- Post Parto -->
+          <div class="course-box" data-category="maternita">
+            <div class="course-box-image">
+              <img src="assets/images/post-parto.jpg" alt="Yoga Post Parto Mamma-Bebè" loading="lazy">
+              <span class="course-badge">Post Parto</span>
+            </div>
+            <div class="course-box-content">
+              <div>
+                <h4>Neomamme & Neonati</h4>
+                <h3>👩‍👦 Yoga Post Parto Mamma-Bebè</h3>
+                <span class="subtitle">Per neomamme e neonati da 40 giorni a 10 mesi</span>
+                <p>
+                  Un tempo prezioso per prenderti cura del tuo corpo dopo il parto e favorire lo sviluppo sereno del tuo bebè. Attraverso il movimento dolce, il gioco e la complicità, rafforzeremo il vostro legame reciproco in un clima protetto e accogliente.
+                </p>
+                <div class="age-chips">
+                  <span class="age-chip">40 giorni – 10 mesi</span>
+                  <span class="age-chip">Recupero pavimento pelvico</span>
+                  <span class="age-chip">Condivisione tra mamme</span>
+                </div>
+              </div>
+              <div style="margin-top: 1.2rem;">
+                <button onclick="openBookingModal('Yoga Post Parto Mamma-Bebè')" class="btn btn-primary btn-sm" style="width: 100%;">
+                  Unisciti alle Lezioni di Gruppo
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sviluppo Infantile -->
+          <div class="course-box" id="sviluppo-infantile" data-category="infanzia">
+            <div class="course-box-image">
+              <img src="assets/images/sviluppo-infantile.jpg" alt="Laboratori di Sviluppo Infantile 0-24 mesi" loading="lazy">
+              <span class="course-badge">0-24 Mesi</span>
+            </div>
+            <div class="course-box-content">
+              <div>
+                <h4>Muoversi e Crescere Insieme</h4>
+                <h3>👶 Sviluppo Infantile (0-24 mesi)</h3>
+                <span class="subtitle">Laboratori pratici e interattivi per genitori e bimbi</span>
+                <p>
+                  Scopriremo insieme come stimolare lo sviluppo del neonato fin dalle prime settimane attraverso il movimento, il gioco e l'osservazione guidata. Imparerai a creare l'ambiente ideale e proporre gli stimoli corretti: tummy time, controllo della testa, rotolo e gattonamento.
+                </p>
+                <div class="age-chips">
+                  <span class="age-chip">0-3 mesi</span>
+                  <span class="age-chip">3-6 mesi</span>
+                  <span class="age-chip">6-9 mesi</span>
+                  <span class="age-chip">9-14 mesi</span>
+                  <span class="age-chip">14-24 mesi</span>
+                </div>
+              </div>
+              <div style="margin-top: 1.2rem;">
+                <button onclick="openBookingModal('Laboratorio Sviluppo Infantile (0-24 mesi)')" class="btn btn-primary btn-sm" style="width: 100%;">
+                  Scegli il Laboratorio per l'Età del tuo Bimbo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==========================================
+             4. 3-COLUMN GRID: YOGA BIMBI, DAL GREMBO, RITI & EVENTI
+             ========================================== -->
+        <div class="courses-grid-3" id="percorsi-esclusivi">
+          <!-- Yoga Bimbi -->
+          <div class="course-box" data-category="infanzia">
+            <div class="course-box-image">
+              <img src="assets/images/yoga-bimbi.jpg" alt="Yoga Bimbi 1-3 anni" loading="lazy">
+              <span class="course-badge">1-3 Anni</span>
+            </div>
+            <div class="course-box-content">
+              <div>
+                <h4>Primi Passi</h4>
+                <h3>🧒 Yoga Bimbi (1-3 anni)</h3>
+                <span class="subtitle">Con mamma, papà o i nonni</span>
+                <p>
+                  Uno spazio sicuro da esplorare. Il tuo bimbo potrà sperimentare il movimento, gli stimoli sensoriali e l'immaginazione con la sicurezza della figura di riferimento, coltivando concentrazione e rilassamento nel gruppo.
+                </p>
+              </div>
+              <div style="margin-top: 1.2rem;">
+                <button onclick="openBookingModal('Yoga Bimbi (1-3 anni)')" class="btn btn-outline btn-sm" style="width: 100%;">
+                  Chiedi Informazioni
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Percorso Dal Grembo ai Primi Passi -->
+          <div class="course-box" data-category="esclusivi">
+            <div class="course-box-image">
+              <img src="assets/images/dal-grembo.jpg" alt="Percorso Dal Grembo ai Primi Passi" loading="lazy">
+              <span class="course-badge">Esclusivo 1-to-1</span>
+            </div>
+            <div class="course-box-content">
+              <div>
+                <h4>Cammino Personalizzato</h4>
+                <h3>🌿 Dal Grembo ai Primi Passi</h3>
+                <span class="subtitle">Benessere, connessione e crescita continua</span>
+                <p>
+                  Un cammino esclusivo che ti segue passo dopo passo: dalla gravidanza al post parto, fino ai primi passi del tuo piccolo. Interamente su misura per te, per vivere questa grande trasformazione con totale fiducia e serenità.
+                </p>
+              </div>
+              <div style="margin-top: 1.2rem;">
+                <button onclick="openBookingModal('Percorso Dal Grembo ai Primi Passi')" class="btn btn-primary btn-sm" style="width: 100%;">
+                  Consulenza Conoscitiva Gratuita
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Riti di Passaggio & Eventi -->
+          <div class="course-box" data-category="esclusivi">
+            <div class="course-box-image">
+              <img src="assets/images/riti-femminili.jpg" alt="Riti di Passaggio ed Eventi Famiglia" loading="lazy">
+              <span class="course-badge">Eventi & Rituali</span>
+            </div>
+            <div class="course-box-content">
+              <div>
+                <h4>Celebrare la Vita</h4>
+                <h3>✨ Riti di Passaggio & Eventi</h3>
+                <span class="subtitle">Blessingway, Suono & Cerimonie</span>
+                <p>
+                  Celebrazioni intime per onorare le grandi tappe: la futura nascita (Blessingway), la futura sposa o eventi speciali per tutta la famiglia con musica, storie e bagno di suoni per condividere gioia pura.
+                </p>
+              </div>
+              <div style="margin-top: 1.2rem;">
+                <button onclick="openBookingModal('Riti di Passaggio ed Eventi')" class="btn btn-outline btn-sm" style="width: 100%;">
+                  Progetta il tuo Evento
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEZIONE CITAZIONI / PHILOSOPHICAL BANNER (Citazioni da content.md)
+         ========================================================================== -->
+    <section class="quotes-section">
+      <div class="container">
+        <div class="quotes-carousel">
+          <!-- Slide 1 -->
+          <div class="quote-slide active">
+            <p class="quote-text">
+              &ldquo;Un asana è uno stato di attenzione, privo di tensione.&rdquo;
+            </p>
+            <span class="quote-author">A.G. Mohan</span>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="quote-slide">
+            <p class="quote-text">
+              &ldquo;Lo yoga è il viaggio del sé, attraverso il sé, verso il sé.&rdquo;
+            </p>
+            <span class="quote-author">Bhagavad Gita</span>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="quote-slide">
+            <p class="quote-text">
+              &ldquo;Dalla pienezza sorge la pienezza. Sottrai la pienezza alla pienezza, e la pienezza ancora rimane.&rdquo;
+            </p>
+            <span class="quote-author">Purnam Mantra</span>
+          </div>
+        </div>
+
+        <!-- Dot Indicators -->
+        <div class="quote-dots">
+          <span class="quote-dot active" aria-label="Citazione 1"></span>
+          <span class="quote-dot" aria-label="Citazione 2"></span>
+          <span class="quote-dot" aria-label="Citazione 3"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEZIONE CHI SONO / LA MIA STORIA & FORMAZIONE
+         ========================================================================== -->
+    <section class="about-section" id="chi-sono">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <div class="about-image-card">
+            <img src="assets/images/alexia.jpg" alt="Alexia Granato, Insegnante di Yoga e Maternità" loading="lazy">
+          </div>
+          <div class="about-signature-badge">
+            <p>Alexia Granato &bull; Insegnante Certificata</p>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <h4>La Mia Storia</h4>
+          <h2>Mi presento: sono Alexia</h2>
+
+          <p class="about-lead">
+            Mi sono avvicinata allo yoga per un'esigenza comune a molti: <strong>scaricare lo stress, alleviare un mal di schiena cronico e ritrovare il sonno</strong>.
+          </p>
+
+          <p>
+            Giorno dopo giorno, ho scoperto che questa disciplina era molto più di un rimedio fisico. La pratica mi ha donato una <strong>profonda consapevolezza corporea, delle mie emozioni e delle mie azioni</strong>. Lo yoga è diventato così un compagno fedele nella mia vita di tutti i giorni, sostenendomi specialmente nei momenti di più grande evoluzione e cambiamento. Mi ha accompagnata e custodita <strong>durante la mia gravidanza e nel mio percorso da neomamma</strong>.
+          </p>
+
+          <p>
+            Ho vissuto sulla mia pelle il valore immenso del movimento consapevole e del respiro in queste fasi così delicate. Per questo motivo, <strong>ho scelto di dedicare il mio lavoro ad aiutare le donne a ritrovare il proprio ritmo naturale e a custodire il proprio equilibrio</strong>.
+          </p>
+
+          <p>
+            In particolare, <strong>ho scelto di specializzarmi nel supporto alla maternità e all'infanzia</strong>. Il mio obiettivo è guidare anche te in questo viaggio, offrendoti uno spazio sicuro dove ritrovare stabilità, fiducia e una connessione profonda con te stessa e con il tuo bambino.
+          </p>
+
+          <!-- Accreditations & Formation Grid -->
+          <div class="accreditations-title">
+            <span>Il Mio Percorso di Formazione</span>
+          </div>
+
+          <div class="accreditations-grid">
+            <div class="accreditation-item">
+              <strong>Hatha Yoga (Diploma Internazionale BWY)</strong>
+              <span>British Wheel of Yoga: il più alto standard di formazione per insegnanti nel Regno Unito.</span>
+            </div>
+            <div class="accreditation-item">
+              <strong>Yogalates Specialist</strong>
+              <span>Integrazione della fluidità dello yoga con il rinforzo muscolare profondo del Pilates.</span>
+            </div>
+            <div class="accreditation-item">
+              <strong>Yoga Gravidanza & in Coppia</strong>
+              <span>Preparazione attiva al parto, respirazione e connessione intima per la coppia.</span>
+            </div>
+            <div class="accreditation-item">
+              <strong>Yoga Post Parto & Mamma-Bebè</strong>
+              <span>Recupero psicofisico e cura della relazione affettiva e corporea con il piccolo.</span>
+            </div>
+            <div class="accreditation-item">
+              <strong>Baby Development (0-24 mesi)</strong>
+              <span>Supporto qualificato alle tappe motorie, sensoriali e cognitive del neonato.</span>
+            </div>
+            <div class="accreditation-item">
+              <strong>Yoga per l'Infanzia (1-14 anni)</strong>
+              <span>Educazione al movimento, gestione delle emozioni e gioco immaginativo.</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 2.2rem;">
+            <a href="https://wa.me/393792631325?text=Ciao%20Alexia,%20ho%20letto%20la%20tua%20storia%20e%20vorrei%20conoscerti" target="_blank" rel="noopener noreferrer" class="btn btn-sage">
+              Scrivimi su WhatsApp per Conoscerci
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEZIONE RECENSIONI / TESTIMONIANZE
+         ========================================================================== -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <h4>Esperienze Condivise</h4>
+          <h2>Cosa Dicono le Allieve e le Mamme</h2>
+          <p>La testimonianza di chi ha trovato nel tappetino uno spazio protetto di ascolto, rinascita e connessione.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Recensione 1 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <p class="testimonial-text">
+                &ldquo;Il corso di yoga in gravidanza con Alexia è stato fondamentale per arrivare al parto con serenità e fiducia. Le sue tecniche di respiro sono state la mia ancora durante il travaglio. Alexia ha una dolcezza e una professionalità rare.&rdquo;
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">EL</div>
+              <div class="author-info">
+                <h5>Elena M.</h5>
+                <span>Mamma di Leonardo (Ciriè)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recensione 2 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <p class="testimonial-text">
+                &ldquo;Cercavo un'attività per scaricare le tensioni del lavoro e il mal di schiena. Nelle lezioni di Hatha Yoga con Alexia ho trovato molto di più: uno spazio protetto, accogliente e senza giudizio in cui ritrovare me stessa ogni settimana.&rdquo;
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">CL</div>
+              <div class="author-info">
+                <h5>Chiara R.</h5>
+                <span>Allieva Hatha Donna (Lanzo)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recensione 3 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <p class="testimonial-text">
+                &ldquo;Il laboratorio di sviluppo infantile e lo yoga mamma-bebè sono stati una boccata d'ossigeno dopo i primi mesi da neomamma. Consigli pratici sul tummy time, giochi sensoriali e tanta complicità con la mia bimba.&rdquo;
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">ST</div>
+              <div class="author-info">
+                <h5>Silvia T.</h5>
+                <span>Mamma di Sofia (Venaria)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEZIONE LE SEDI SUL TERRITORIO (Lanzo, Ciriè, Robassomero, Venaria)
+         ========================================================================== -->
+    <section class="locations-section" id="sedi">
+      <div class="container">
+        <div class="section-header">
+          <h4>Dove Praticare Insieme</h4>
+          <h2>Le Mie Sedi sul Territorio</h2>
+          <p>Trovi i miei corsi e laboratori in quattro accoglienti spazi sul territorio piemontese, facilmente raggiungibili.</p>
+        </div>
+
+        <div class="locations-grid">
+          <!-- Sede 1: Lanzo -->
+          <div class="location-card">
+            <div class="location-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3>Lanzo Torinese</h3>
+            <p>Hatha Yoga per la Donna, percorsi serali e mattutini in studio dedicato.</p>
+            <span class="location-tag">Hatha Donna &bull; 1-to-1</span>
+          </div>
+
+          <!-- Sede 2: Ciriè -->
+          <div class="location-card">
+            <div class="location-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3>Ciriè</h3>
+            <p>Yoga Gravidanza, Maternità, incontri per la coppia con ostetrica e corsi donna.</p>
+            <span class="location-tag">Gravidanza &bull; Mamma-Bebè</span>
+          </div>
+
+          <!-- Sede 3: Robassomero -->
+          <div class="location-card">
+            <div class="location-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3>Robassomero</h3>
+            <p>Laboratori pratici di Sviluppo Infantile 0-24 mesi e Yoga Bimbi 1-3 anni.</p>
+            <span class="location-tag">0-24 Mesi &bull; Yoga Bimbi</span>
+          </div>
+
+          <!-- Sede 4: Venaria -->
+          <div class="location-card">
+            <div class="location-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3>Venaria Reale</h3>
+            <p>Corsi settimanali, percorsi personalizzati e rituali di passaggio femminili.</p>
+            <span class="location-tag">Donna &bull; Riti & Eventi</span>
+          </div>
+        </div>
+
+        <div style="text-align: center;">
+          <button onclick="openBookingModal()" class="btn btn-outline">
+            Richiedi Orari e Dettagli Sedi
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CALL TO ACTION BANNER (Dark Accent / PFG Style)
+         ========================================================================== -->
+    <section class="cta-banner-section">
+      <div class="cta-banner-bg" aria-hidden="true"></div>
+      <div class="container cta-banner-content">
+        <h4>Spazio di Accoglienza</h4>
+        <h2>Vuoi sperimentare la gioia del movimento consapevole?</h2>
+        <p>
+          Se cerchi uno spazio sicuro dove rallentare e ascoltarti, io ti aspetto sul tappetino. Che sia per una lezione di prova o per chiarire qualsiasi curiosità, puoi scrivermi direttamente.
+        </p>
+        <div class="cta-banner-actions">
+          <a href="https://wa.me/393792631325?text=Ciao%20Alexia,%20vorrei%20prenotare%20una%20lezione%20di%20prova" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            Scrivimi al 379 2631325
+          </a>
+          <button onclick="openBookingModal()" class="btn btn-banner-white">
+            Prenota dal Sito
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEZIONE CONTATTI & NEWSLETTER
+         ========================================================================== -->
+    <section class="contact-section" id="contatti">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Colonna Info Contatti -->
+          <div class="contact-info-col">
+            <h4>Inizia il tuo viaggio con me</h4>
+            <h2>Contatti & Informazioni</h2>
+            <p>
+              Hai domande sui corsi o vuoi iniziare un percorso personalizzato? Ti aspetto per ascoltarti e accoglierti nelle mie sedi sul territorio.
+            </p>
+
+            <div class="contact-channels">
+              <!-- WhatsApp -->
+              <a href="https://wa.me/393792631325" target="_blank" rel="noopener noreferrer" class="channel-card">
+                <div class="channel-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                </div>
+                <div class="channel-details">
+                  <h5>WhatsApp Diretto</h5>
+                  <p>379 2631325 (Clicca per scrivermi direttamente)</p>
+                </div>
+              </a>
+
+              <!-- Email -->
+              <a href="mailto:alexiagranatoyoga@gmail.com" class="channel-card">
+                <div class="channel-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="channel-details">
+                  <h5>Email</h5>
+                  <p>alexiagranatoyoga@gmail.com</p>
+                </div>
+              </a>
+
+              <!-- Instagram -->
+              <a href="https://instagram.com/alexiagranato" target="_blank" rel="noopener noreferrer" class="channel-card">
+                <div class="channel-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </div>
+                <div class="channel-details">
+                  <h5>Instagram</h5>
+                  <p>@alexiagranato</p>
+                </div>
+              </a>
+
+              <!-- Facebook -->
+              <a href="https://facebook.com/AlexiaYoga" target="_blank" rel="noopener noreferrer" class="channel-card">
+                <div class="channel-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </div>
+                <div class="channel-details">
+                  <h5>Facebook</h5>
+                  <p>Alexia Yoga</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Colonna Modulo Contatto -->
+          <div class="contact-form-col">
+            <h3>Invia un Messaggio</h3>
+            <p style="font-size: 0.92rem; margin-bottom: 1.5rem;">Compila il form per richiedere disponibilità o concordare una lezione individuale.</p>
+
+            <form id="contactForm">
+              <div class="form-group">
+                <label class="form-label" for="contactName">Il tuo Nome e Cognome *</label>
+                <input type="text" id="contactName" class="form-control" placeholder="es. Maria Rossi" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactEmail">Email *</label>
+                <input type="email" id="contactEmail" class="form-control" placeholder="nome@email.it" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactCourse">Corso di Interesse *</label>
+                <select id="contactCourse" class="form-control" required>
+                  <option value="">Seleziona un percorso...</option>
+                  <option value="Hatha Yoga per la Donna">Hatha Yoga per la Donna</option>
+                  <option value="Yoga in Gravidanza e per il Parto">Yoga in Gravidanza e per il Parto</option>
+                  <option value="Yoga Post Parto Mamma-Bebè">Yoga Post Parto Mamma-Bebè</option>
+                  <option value="Sviluppo Infantile (0-24 mesi)">Sviluppo Infantile (0-24 mesi)</option>
+                  <option value="Yoga Bimbi (1-3 anni)">Yoga Bimbi (1-3 anni)</option>
+                  <option value="Dal Grembo ai Primi Passi">Percorso "Dal Grembo ai Primi Passi"</option>
+                  <option value="Riti di Passaggio / Eventi">Riti di Passaggio o Eventi Famiglia</option>
+                  <option value="Altro">Altra Richiesta</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactLocation">Sede Preferita</label>
+                <select id="contactLocation" class="form-control">
+                  <option value="Lanzo">Lanzo Torinese</option>
+                  <option value="Ciriè">Ciriè</option>
+                  <option value="Robassomero">Robassomero</option>
+                  <option value="Venaria">Venaria Reale</option>
+                  <option value="Online / Individuale">Online o A Domicilio</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactMessage">Messaggio / Note personali</label>
+                <textarea id="contactMessage" class="form-control" placeholder="Raccontami brevemente la tua esperienza o la settimana di gravidanza / età del tuo bimbo..."></textarea>
+              </div>
+
+              <p class="form-privacy-note">
+                I tuoi dati sono protetti e trattati nel rispetto della privacy esclusivamente per ricontattarti.
+              </p>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Invia Richiesta
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- PFG Newsletter Block -->
+        <div class="newsletter-card">
+          <div>
+            <h3>Newsletter & Approfondimenti</h3>
+            <p>
+              Iscriviti per ricevere aggiornamenti sui nuovi corsi, eventi speciali per famiglie, rituali di passaggio ed articoli dedicati al benessere della donna e dell'infanzia.
+            </p>
+          </div>
+          <div>
+            <form id="newsletterForm" class="newsletter-form-inline">
+              <input type="email" class="form-control" placeholder="Inserisci il tuo indirizzo email..." required>
+              <button type="submit" class="btn btn-primary btn-sm">Iscriviti</button>
+            </form>
+            <p style="font-size: 0.74rem; color: var(--color-text-light); margin-top: 0.6rem;">
+              Niente spam. Puoi cancellarti con un solo clic in qualunque momento.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER (4 Colonne Stile Practice Feel Glow)
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-col">
+          <img src="assets/images/logo.svg" alt="Alexia Granato Yoga" style="height: 44px; margin-bottom: 1.2rem;">
+          <p>
+            Uno spazio protetto di ascolto, movimento consapevole e respiro. Sostegno qualificato alla donna, alla maternità e allo sviluppo armonico dell'infanzia.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com/alexiagranato" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://facebook.com/AlexiaYoga" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://wa.me/393792631325" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Corsi -->
+        <div class="footer-col">
+          <h4>I Percorsi</h4>
+          <nav class="footer-nav">
+            <a href="#corsi-donna">Hatha Yoga per la Donna</a>
+            <a href="#maternita">Yoga in Gravidanza</a>
+            <a href="#maternita">Yoga Post Parto Mamma-Bebè</a>
+            <a href="#sviluppo-infantile">Sviluppo Infantile (0-24m)</a>
+            <a href="#percorsi-esclusivi">Yoga Bimbi (1-3 anni)</a>
+            <a href="#percorsi-esclusivi">Dal Grembo ai Primi Passi</a>
+            <a href="#percorsi-esclusivi">Riti di Passaggio & Eventi</a>
+          </nav>
+        </div>
+
+        <!-- Col 3: Le Sedi -->
+        <div class="footer-col">
+          <h4>Le Sedi</h4>
+          <nav class="footer-nav">
+            <a href="#sedi">Lanzo Torinese</a>
+            <a href="#sedi">Ciriè</a>
+            <a href="#sedi">Robassomero</a>
+            <a href="#sedi">Venaria Reale</a>
+            <a href="#chi-sono">Diploma BWY UK</a>
+            <a href="#chi-sono">La Mia Formazione</a>
+          </nav>
+        </div>
+
+        <!-- Col 4: Contatti Rapidi -->
+        <div class="footer-col">
+          <h4>Contatto Rapido</h4>
+          <p>
+            <strong>WhatsApp:</strong> <a href="https://wa.me/393792631325" style="text-decoration: underline;">379 2631325</a><br>
+            <strong>Email:</strong> alexiagranatoyoga@gmail.com
+          </p>
+          <div style="margin-top: 1.2rem;">
+            <button onclick="openBookingModal()" class="btn btn-outline btn-sm" style="width: 100%;">
+              Prenota Lezione
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Alexia Granato Yoga &bull; Tutti i diritti riservati &bull; Lanzo, Ciriè, Robassomero, Venaria.
+        </div>
+        <div>
+          <a href="#">Privacy Policy</a> &bull; <a href="#">Cookie Policy</a> &bull; <a href="#">Note Legali</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       FLOATING WHATSAPP BUTTON (Requested in content.md)
+       ========================================================================== -->
+  <div class="floating-whatsapp">
+    <div class="floating-whatsapp-tooltip">
+      Scrivimi su WhatsApp &bull; Rispondo presto
+    </div>
+    <a href="https://wa.me/393792631325?text=Ciao%20Alexia,%20ti%20contatto%20dal%20sito%20per%20avere%20informazioni%20sui%20corsi" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="floating-whatsapp-btn" 
+       aria-label="Contattami su WhatsApp al 379 2631325">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    </a>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: PRENOTAZIONE / INFORMAZIONI LEZIONE
+       ========================================================================== -->
+  <div class="modal-overlay" id="bookingModal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Chiudi finestra">&times;</button>
+      <h4>Prenota o Richiedi Info</h4>
+      <h3>Inizia il tuo Viaggio</h3>
+      <p style="font-size: 0.92rem; color: var(--color-text-muted);">Scegli come preferisci metterti in contatto con Alexia:</p>
+
+      <div class="modal-tabs">
+        <button class="modal-tab-btn active" data-tab="tabWhatsApp">WhatsApp (Istantaneo)</button>
+        <button class="modal-tab-btn" data-tab="tabEmail">Modulo Email</button>
+      </div>
+
+      <!-- Tab 1: WhatsApp -->
+      <div id="tabWhatsApp" class="modal-tab-content">
+        <div class="form-group">
+          <label class="form-label" for="modalName">Il tuo Nome</label>
+          <input type="text" id="modalName" class="form-control" placeholder="es. Giulia">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalCourseSelect">Corso o Percorso Desiderato</label>
+          <select id="modalCourseSelect" class="form-control">
+            <option value="Hatha Yoga per la Donna">Hatha Yoga per la Donna</option>
+            <option value="Yoga in Gravidanza e per il Parto">Yoga in Gravidanza e per il Parto</option>
+            <option value="Yoga Post Parto Mamma-Bebè">Yoga Post Parto Mamma-Bebè</option>
+            <option value="Sviluppo Infantile (0-24 mesi)">Sviluppo Infantile (0-24 mesi)</option>
+            <option value="Yoga Bimbi (1-3 anni)">Yoga Bimbi (1-3 anni)</option>
+            <option value="Dal Grembo ai Primi Passi">Dal Grembo ai Primi Passi (1-to-1)</option>
+            <option value="Riti di Passaggio / Eventi">Riti di Passaggio / Blessingway</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalLocation">Sede</label>
+          <select id="modalLocation" class="form-control">
+            <option value="Lanzo">Lanzo Torinese</option>
+            <option value="Ciriè">Ciriè</option>
+            <option value="Robassomero">Robassomero</option>
+            <option value="Venaria">Venaria Reale</option>
+          </select>
+        </div>
+
+        <a href="https://wa.me/393792631325" id="modalWhatsAppSendBtn" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%; margin-top: 1rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          Apri Chat WhatsApp
+        </a>
+      </div>
+
+      <!-- Tab 2: Email -->
+      <div id="tabEmail" class="modal-tab-content" style="display: none;">
+        <form id="modalEmailForm">
+          <div class="form-group">
+            <label class="form-label" for="modalEmailName">Nome</label>
+            <input type="text" id="modalEmailName" class="form-control" placeholder="Il tuo nome" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="modalEmailAddress">Email</label>
+            <input type="email" id="modalEmailAddress" class="form-control" placeholder="nome@email.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="modalEmailPhone">Telefono (opzionale)</label>
+            <input type="tel" id="modalEmailPhone" class="form-control" placeholder="es. 340 1234567">
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+            Invia Richiesta via Email
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Node dependencies (if installed later)
+node_modules/
+package-lock.json
+
+# Logs & temp
+*.log
+scratch/
