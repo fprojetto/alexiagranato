@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://alexiagranato.it/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://alexiagranato.it/assets/images/hero.webp</image:loc>
+      <image:title>Alexia Granato Yoga e Maternità</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://alexiagranato.it/assets/images/hatha-donna.webp</image:loc>
+      <image:title>Hatha Yoga per la Donna</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://alexiagranato.it/assets/images/gravidanza.webp</image:loc>
+      <image:title>Yoga in Gravidanza e per il Parto</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://alexiagranato.it/chi-sono.html</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://alexiagranato.it/assets/images/alexia.webp</image:loc>
+      <image:title>Alexia Granato - Insegnante Hatha Yoga Diploma BWY</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://alexiagranato.it/contatti.html</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
