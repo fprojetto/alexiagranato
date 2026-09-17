@@ -132,7 +132,7 @@ Hai domande sui corsi o vuoi iniziare un percorso personalizzato? Ti aspetto per
 
 * 📍 **Dove mi trovi (Le mie Sedi):** Lanzo | Ciriè | Robassomero | Venaria   
 * 📞 **WhatsApp:** [379 2631325](https://wa.me/393792631325) *(Clicca per scrivermi direttamente)*   
-* ✉️ **Email:** alexiagranatoyoga@gmail.com   
+* ✉️ **Email:** info@alexiagranato.it   
 * 📱 **Instagram:** [@alexiagranato](https://instagram.com/alexiagranato)   
 * 💻 **Facebook:** [Alexia Yoga](https://facebook.com/AlexiaYoga) 
 
