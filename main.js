@@ -117,6 +117,87 @@ document.addEventListener('DOMContentLoaded', () => {
     startQuoteAutoPlay();
   }
 
+  // 5b. Testimonials Carousel
+  const testimonialSlides = document.querySelectorAll('.testimonial-slide');
+  const testimonialDots = document.querySelectorAll('.testimonial-dot');
+  const testimonialPrev = document.getElementById('testimonialPrev');
+  const testimonialNext = document.getElementById('testimonialNext');
+  const testimonialCarousel = document.getElementById('testimonialsCarousel');
+  let currentTestimonialIndex = 0;
+  let testimonialTimer = null;
+
+  function showTestimonial(index) {
+    if (!testimonialSlides.length) return;
+    testimonialSlides.forEach(slide => slide.classList.remove('active'));
+    testimonialDots.forEach(dot => dot.classList.remove('active'));
+
+    currentTestimonialIndex = (index + testimonialSlides.length) % testimonialSlides.length;
+    testimonialSlides[currentTestimonialIndex].classList.add('active');
+    if (testimonialDots[currentTestimonialIndex]) {
+      testimonialDots[currentTestimonialIndex].classList.add('active');
+    }
+  }
+
+  function startTestimonialAutoPlay() {
+    stopTestimonialAutoPlay();
+    testimonialTimer = setInterval(() => {
+      showTestimonial(currentTestimonialIndex + 1);
+    }, 7500);
+  }
+
+  function stopTestimonialAutoPlay() {
+    if (testimonialTimer) clearInterval(testimonialTimer);
+  }
+
+  if (testimonialPrev) {
+    testimonialPrev.addEventListener('click', () => {
+      showTestimonial(currentTestimonialIndex - 1);
+      startTestimonialAutoPlay();
+    });
+  }
+
+  if (testimonialNext) {
+    testimonialNext.addEventListener('click', () => {
+      showTestimonial(currentTestimonialIndex + 1);
+      startTestimonialAutoPlay();
+    });
+  }
+
+  testimonialDots.forEach((dot, idx) => {
+    dot.addEventListener('click', () => {
+      showTestimonial(idx);
+      startTestimonialAutoPlay();
+    });
+  });
+
+  if (testimonialCarousel) {
+    testimonialCarousel.addEventListener('mouseenter', stopTestimonialAutoPlay);
+    testimonialCarousel.addEventListener('mouseleave', startTestimonialAutoPlay);
+
+    // Touch swipe support for mobile devices
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    testimonialCarousel.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    testimonialCarousel.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      if (touchEndX < touchStartX - 45) {
+        showTestimonial(currentTestimonialIndex + 1);
+        startTestimonialAutoPlay();
+      } else if (touchEndX > touchStartX + 45) {
+        showTestimonial(currentTestimonialIndex - 1);
+        startTestimonialAutoPlay();
+      }
+    }, { passive: true });
+  }
+
+  if (testimonialSlides.length > 0) {
+    startTestimonialAutoPlay();
+  }
+
   // 6. Modal Controls
   const modalOverlay = document.getElementById('bookingModal');
   const modalCloseBtn = document.querySelector('.modal-close');
