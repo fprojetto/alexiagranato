@@ -1110,11 +1110,12 @@ ul {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
   gap: clamp(2.5rem, 6vw, 5.5rem);
-  align-items: center;
+  align-items: start;
 }
 
 .about-visual {
-  position: relative;
+  position: sticky;
+  top: 100px;
 }
 
 .about-image-card {
@@ -1168,10 +1169,16 @@ ul {
   margin-bottom: 1.5rem;
 }
 
-/* Accreditations Grid */
+/* Accreditations Section (Full Width below About Grid) */
+.about-accreditations {
+  margin-top: clamp(3.5rem, 6vw, 5rem);
+  padding-top: clamp(2rem, 4vw, 3rem);
+  border-top: 1px solid var(--border-subtle);
+}
+
 .accreditations-title {
-  margin-top: 2.5rem;
-  margin-bottom: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 1.8rem;
   font-family: var(--font-heading);
   font-size: 0.85rem;
   letter-spacing: 0.12em;
@@ -1192,8 +1199,8 @@ ul {
 
 .accreditations-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
 .accreditation-item {
@@ -1851,6 +1858,13 @@ textarea.form-control {
   .about-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
+  }
+  .about-visual {
+    position: relative;
+    top: auto;
+  }
+  .accreditations-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
   .testimonials-grid {
     grid-template-columns: 1fr;
