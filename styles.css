@@ -796,6 +796,40 @@ ul {
   box-shadow: 0 4px 16px rgba(237, 106, 91, 0.28);
 }
 
+/* Tab Panels Container (Opzione 1) */
+.courses-tab-panels {
+  position: relative;
+  width: 100%;
+}
+
+.course-tab-pane {
+  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.course-tab-pane.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.course-tab-pane > *:last-child {
+  margin-bottom: 0;
+}
+
+.courses-tab-panels.show-all .course-tab-pane {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  margin-bottom: 3.5rem;
+}
+
+.courses-tab-panels.show-all .course-tab-pane:last-child {
+  margin-bottom: 0;
+}
+
 /* Editorial Feature Card */
 .course-card-editorial {
   display: grid;
