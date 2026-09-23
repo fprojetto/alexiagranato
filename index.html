@@ -444,117 +444,147 @@
         </div>
 
         <!-- ==========================================
-             3. 2-COLUMN GRID: POST PARTO & SVILUPPO INFANTILE
+             3. CAROSELLO: PERCORSI MAMMA-BEBÈ, INFANZIA ED ESCLUSIVI
              ========================================== -->
-        <div class="courses-grid-2">
-          <!-- Post Parto -->
-          <div class="course-box" data-category="maternita">
-            <div class="course-box-image">
-              <img src="assets/images/post-parto.webp" alt="Yoga Post Parto Mamma-Bebè" loading="lazy">
-              <span class="course-badge">Post Parto</span>
+        <div class="courses-carousel-section" id="percorsi-secondari">
+          <div class="carousel-header">
+            <div class="carousel-header-text">
+              <span class="community-badge" style="margin-bottom: 0.5rem; display: inline-block;">👶 Dai 40 Giorni ai Primi Passi</span>
+              <h3 style="font-size: clamp(1.4rem, 2.2vw, 1.8rem); margin-bottom: 0.3rem;">Percorsi Mamma-Bebè, Sviluppo Motorio e Infanzia</h3>
+              <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 0;">Laboratori pratici e percorsi dedicati per accompagnare ogni tappa di crescita del tuo piccolo.</p>
             </div>
-            <div class="course-box-content">
-              <div>
-                <h4>Neomamme & Neonati</h4>
-                <h3>👩‍👦 Yoga Post Parto Mamma-Bebè</h3>
-                <span class="subtitle">Per neomamme e neonati da 40 giorni a 1 anno</span>
-                <p>
-                  Un tempo prezioso per prenderti cura del tuo benessere e quello del tuo bebè.  Attraverso il movimento dolce, esperienze sensoriali, il gioco, il rilassamento rafforziamo il vostro legame reciproco e promuoviamo il suo sviluppo motorio in un clima protetto e accogliente.
-                </p>
-                <div class="age-chips">
-                  <span class="age-chip">40 giorni – 1 anno</span>
-                  <span class="age-chip">Lezioni di Gruppo</span>
-                  <span class="age-chip">Condivisione tra mamme</span>
+            <div class="carousel-nav-controls">
+              <button class="carousel-control-btn prev" id="coursesPrevBtn" aria-label="Percorso precedente" disabled>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+              </button>
+              <button class="carousel-control-btn next" id="coursesNextBtn" aria-label="Percorso successivo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="courses-carousel-track" id="coursesCarouselTrack">
+            <!-- 1. Post Parto -->
+            <div class="course-box" id="post-parto" data-category="maternita">
+              <div class="course-box-image">
+                <img src="assets/images/post-parto.webp" alt="Yoga Post Parto Mamma-Bebè" loading="lazy">
+                <span class="course-badge">Post Parto</span>
+              </div>
+              <div class="course-box-content">
+                <div>
+                  <h4>Neomamme & Neonati</h4>
+                  <h3>👩‍👦 Yoga Post Parto Mamma-Bebè</h3>
+                  <span class="subtitle">Per neomamme e neonati da 40 giorni a 1 anno</span>
+                  <p>
+                    Un tempo prezioso per prenderti cura del tuo benessere e quello del tuo bebè. Attraverso il movimento dolce, esperienze sensoriali, il gioco, il rilassamento rafforziamo il vostro legame reciproco e promuoviamo il suo sviluppo motorio in un clima protetto e accogliente.
+                  </p>
+                  <div class="age-chips">
+                    <span class="age-chip">40 giorni – 1 anno</span>
+                    <span class="age-chip">Lezioni di Gruppo</span>
+                    <span class="age-chip">Condivisione tra mamme</span>
+                  </div>
+                </div>
+                <div style="margin-top: 1.2rem;">
+                  <button onclick="openBookingModal('Yoga Post Parto Mamma-Bebè')" class="btn btn-primary btn-sm" style="width: 100%;">
+                    Unisciti alle Lezioni di Gruppo
+                  </button>
                 </div>
               </div>
-              <div style="margin-top: 1.2rem;">
-                <button onclick="openBookingModal('Yoga Post Parto Mamma-Bebè')" class="btn btn-primary btn-sm" style="width: 100%;">
-                  Unisciti alle Lezioni di Gruppo
-                </button>
-              </div>
             </div>
-          </div>
 
-          <!-- Sviluppo Motorio Infantile -->
-          <div class="course-box" id="sviluppo-infantile" data-category="infanzia">
-            <div class="course-box-image">
-              <img src="assets/images/sviluppo-infantile.webp" alt="Laboratori di Sviluppo Motorio Infantile 0-24 mesi" loading="lazy">
-              <span class="course-badge">0-24 Mesi</span>
-            </div>
-            <div class="course-box-content">
-              <div>
-                <h4>Muoversi e Crescere Insieme</h4>
-                <h3>👶 Sviluppo Motorio Infantile (0-24 mesi)</h3>
-                <span class="subtitle">Laboratori pratici e interattivi per genitori e bimbi</span>
-                <p>
-                  I nostri laboratori sullo <strong>sviluppo motorio infantile</strong> ti guidano ad accompagnare la crescita del tuo bebè fin dalle prime settimane. Attraverso l’osservazione, il movimento libero, esperienze sensoriali e il gioco, scoprirai come proporre gli stimoli corretti per facilitare il raggiungimento delle tappe motorie fondamentali (tummy time, controllo del capo, rotolo, gattonamento e primi passi).
-                </p>
-                <div class="age-chips">
-                  <span class="age-chip">Lezioni di Gruppo e Individuali</span>
-                  <span class="age-chip">0-3 mesi</span>
-                  <span class="age-chip">3-6 mesi</span>
-                  <span class="age-chip">6-9 mesi</span>
-                  <span class="age-chip">9-14 mesi</span>
-                  <span class="age-chip">14-24 mesi</span>
+            <!-- 2. Sviluppo Motorio Infantile -->
+            <div class="course-box" id="sviluppo-infantile" data-category="infanzia">
+              <div class="course-box-image">
+                <img src="assets/images/sviluppo-infantile.webp" alt="Laboratori di Sviluppo Motorio Infantile 0-24 mesi" loading="lazy">
+                <span class="course-badge">0-24 Mesi</span>
+              </div>
+              <div class="course-box-content">
+                <div>
+                  <h4>Muoversi e Crescere Insieme</h4>
+                  <h3>👶 Sviluppo Motorio Infantile (0-24 mesi)</h3>
+                  <span class="subtitle">Laboratori pratici e interattivi per genitori e bimbi</span>
+                  <p>
+                    I nostri laboratori sullo <strong>sviluppo motorio infantile</strong> ti guidano ad accompagnare la crescita del tuo bebè fin dalle prime settimane. Attraverso l’osservazione, il movimento libero, esperienze sensoriali e il gioco, scoprirai come proporre gli stimoli corretti per facilitare il raggiungimento delle tappe motorie fondamentali (tummy time, controllo del capo, rotolo, gattonamento e primi passi).
+                  </p>
+                  <div class="age-chips">
+                    <span class="age-chip">Lezioni di Gruppo e Individuali</span>
+                    <span class="age-chip">0-3 mesi</span>
+                    <span class="age-chip">3-6 mesi</span>
+                    <span class="age-chip">6-9 mesi</span>
+                    <span class="age-chip">9-14 mesi</span>
+                    <span class="age-chip">14-24 mesi</span>
+                  </div>
+                </div>
+                <div style="margin-top: 1.2rem;">
+                  <button onclick="openBookingModal('Laboratorio Sviluppo Motorio Infantile (0-24 mesi)')" class="btn btn-primary btn-sm" style="width: 100%;">
+                    Scegli il Laboratorio per l'Età del tuo Bimbo
+                  </button>
                 </div>
               </div>
-              <div style="margin-top: 1.2rem;">
-                <button onclick="openBookingModal('Laboratorio Sviluppo Motorio Infantile (0-24 mesi)')" class="btn btn-primary btn-sm" style="width: 100%;">
-                  Scegli il Laboratorio per l'Età del tuo Bimbo
-                </button>
+            </div>
+
+            <!-- 3. Yoga Bimbi -->
+            <div class="course-box" id="yoga-bimbi" data-category="infanzia">
+              <div class="course-box-image">
+                <img src="assets/images/yoga-bimbi.webp" alt="Yoga Bimbi 1-3 anni" loading="lazy">
+                <span class="course-badge">1-3 Anni</span>
+              </div>
+              <div class="course-box-content">
+                <div>
+                  <h4>Primi Passi</h4>
+                  <h3>🧒 Yoga Bimbi (1-3 anni)</h3>
+                  <span class="subtitle">Con mamma, papà o i nonni</span>
+                  <p>
+                    Uno spazio sicuro da esplorare. Il tuo bimbo potrà sperimentare il movimento, gli stimoli sensoriali e l'immaginazione con la sicurezza della figura di riferimento, coltivando concentrazione e rilassamento nel gruppo.
+                  </p>
+                  <div class="age-chips">
+                    <span class="age-chip">1-3 Anni</span>
+                    <span class="age-chip">Gioco & Movimento</span>
+                    <span class="age-chip">Bimbo + Adulto</span>
+                  </div>
+                </div>
+                <div style="margin-top: 1.2rem;">
+                  <button onclick="openBookingModal('Yoga Bimbi (1-3 anni)')" class="btn btn-primary btn-sm" style="width: 100%;">
+                    Chiedi Informazioni
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Percorso Dal Grembo ai Primi Passi -->
+            <div class="course-box" id="percorsi-esclusivi" data-category="esclusivi">
+              <div class="course-box-image">
+                <img src="assets/images/dal-grembo.webp" alt="Percorso Dal Grembo ai Primi Passi" loading="lazy">
+                <span class="course-badge">Esclusivo 1-to-1</span>
+              </div>
+              <div class="course-box-content">
+                <div>
+                  <h4>Cammino Personalizzato</h4>
+                  <h3>🌿 Dal Grembo ai Primi Passi</h3>
+                  <span class="subtitle">Benessere, connessione e crescita continua</span>
+                  <p>
+                    Un cammino esclusivo che ti segue passo dopo passo: dalla gravidanza al post parto, fino ai primi passi del tuo piccolo. Interamente su misura per te, per vivere questa grande trasformazione con totale fiducia e serenità.
+                  </p>
+                  <div class="age-chips">
+                    <span class="age-chip">Percorso Individuale</span>
+                    <span class="age-chip">Dalla Nascita ai Passi</span>
+                    <span class="age-chip">Su Misura</span>
+                  </div>
+                </div>
+                <div style="margin-top: 1.2rem;">
+                  <button onclick="openBookingModal('Percorso Dal Grembo ai Primi Passi')" class="btn btn-primary btn-sm" style="width: 100%;">
+                    Consulenza Conoscitiva Gratuita
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- ==========================================
-             4. 2-COLUMN GRID: YOGA BIMBI & DAL GREMBO
-             ========================================== -->
-        <div class="courses-grid-2" id="percorsi-esclusivi">
-          <!-- Yoga Bimbi -->
-          <div class="course-box" data-category="infanzia">
-            <div class="course-box-image">
-              <img src="assets/images/yoga-bimbi.webp" alt="Yoga Bimbi 1-3 anni" loading="lazy">
-              <span class="course-badge">1-3 Anni</span>
-            </div>
-            <div class="course-box-content">
-              <div>
-                <h4>Primi Passi</h4>
-                <h3>🧒 Yoga Bimbi (1-3 anni)</h3>
-                <span class="subtitle">Con mamma, papà o i nonni</span>
-                <p>
-                  Uno spazio sicuro da esplorare. Il tuo bimbo potrà sperimentare il movimento, gli stimoli sensoriali e l'immaginazione con la sicurezza della figura di riferimento, coltivando concentrazione e rilassamento nel gruppo.
-                </p>
-              </div>
-              <div style="margin-top: 1.2rem;">
-                <button onclick="openBookingModal('Yoga Bimbi (1-3 anni)')" class="btn btn-primary btn-sm" style="width: 100%;">
-                  Chiedi Informazioni
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Percorso Dal Grembo ai Primi Passi -->
-          <div class="course-box" data-category="esclusivi">
-            <div class="course-box-image">
-              <img src="assets/images/dal-grembo.webp" alt="Percorso Dal Grembo ai Primi Passi" loading="lazy">
-              <span class="course-badge">Esclusivo 1-to-1</span>
-            </div>
-            <div class="course-box-content">
-              <div>
-                <h4>Cammino Personalizzato</h4>
-                <h3>🌿 Dal Grembo ai Primi Passi</h3>
-                <span class="subtitle">Benessere, connessione e crescita continua</span>
-                <p>
-                  Un cammino esclusivo che ti segue passo dopo passo: dalla gravidanza al post parto, fino ai primi passi del tuo piccolo. Interamente su misura per te, per vivere questa grande trasformazione con totale fiducia e serenità.
-                </p>
-              </div>
-              <div style="margin-top: 1.2rem;">
-                <button onclick="openBookingModal('Percorso Dal Grembo ai Primi Passi')" class="btn btn-primary btn-sm" style="width: 100%;">
-                  Consulenza Conoscitiva Gratuita
-                </button>
-              </div>
-            </div>
+          <div class="carousel-pagination" id="coursesCarouselDots">
+            <button class="carousel-dot active" aria-label="Scheda 1"></button>
+            <button class="carousel-dot" aria-label="Scheda 2"></button>
+            <button class="carousel-dot" aria-label="Scheda 3"></button>
+            <button class="carousel-dot" aria-label="Scheda 4"></button>
           </div>
         </div>
 
