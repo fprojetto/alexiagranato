@@ -918,6 +918,120 @@ ul {
   border: 1px solid var(--border-peach);
 }
 
+/* ==========================================================================
+   COURSES CAROUSEL (Opzione 2)
+   ========================================================================== */
+.courses-carousel-section {
+  margin-bottom: 3.5rem;
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-card);
+  border-radius: var(--border-radius);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  box-shadow: var(--shadow-soft);
+}
+
+.carousel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.carousel-header-text {
+  flex: 1 1 300px;
+}
+
+.carousel-nav-controls {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.carousel-control-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--border-peach);
+  background-color: var(--color-warm-white);
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 2px 8px rgba(18, 18, 18, 0.04);
+}
+
+.carousel-control-btn:hover:not(:disabled) {
+  background-color: var(--color-coral);
+  color: #FFFFFF;
+  border-color: var(--color-coral);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(237, 106, 91, 0.25);
+}
+
+.carousel-control-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.courses-carousel-track {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 0.5rem 0.2rem 1rem 0.2rem;
+}
+
+.courses-carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.courses-carousel-track .course-box {
+  flex: 0 0 calc(50% - 0.75rem);
+  scroll-snap-align: start;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .courses-carousel-track .course-box {
+    flex: 0 0 88%;
+  }
+}
+
+.carousel-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--border-card);
+  cursor: pointer;
+  transition: var(--transition);
+  padding: 0;
+}
+
+.carousel-dot.active {
+  background-color: var(--color-coral);
+  width: 24px;
+  border-radius: 12px;
+}
+
 /* Secondary 2-Column & 3-Column Courses Grid */
 .courses-grid-2 {
   display: grid;

@@ -50,7 +50,73 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4. Course Category Filtering
+  // 4. Courses Carousel (Opzione 2)
+  const coursesTrack = document.getElementById('coursesCarouselTrack');
+  const coursesPrevBtn = document.getElementById('coursesPrevBtn');
+  const coursesNextBtn = document.getElementById('coursesNextBtn');
+  const coursesDots = document.querySelectorAll('#coursesCarouselDots .carousel-dot');
+  const carouselSection = document.getElementById('percorsi-secondari');
+
+  function getCarouselCardStep() {
+    if (!coursesTrack) return 320;
+    const firstCard = coursesTrack.querySelector('.course-box');
+    if (!firstCard) return 320;
+    const gap = 24; // 1.5rem gap
+    return firstCard.offsetWidth + gap;
+  }
+
+  function updateCoursesCarouselState() {
+    if (!coursesTrack || !coursesPrevBtn || !coursesNextBtn) return;
+    const scrollLeft = coursesTrack.scrollLeft;
+    const maxScroll = coursesTrack.scrollWidth - coursesTrack.clientWidth;
+
+    coursesPrevBtn.disabled = scrollLeft <= 10;
+    coursesNextBtn.disabled = scrollLeft >= maxScroll - 10;
+
+    const step = getCarouselCardStep();
+    const activeIndex = Math.min(
+      coursesDots.length - 1,
+      Math.max(0, Math.round(scrollLeft / step))
+    );
+
+    coursesDots.forEach((dot, idx) => {
+      dot.classList.toggle('active', idx === activeIndex);
+    });
+  }
+
+  if (coursesTrack && coursesPrevBtn && coursesNextBtn) {
+    coursesPrevBtn.addEventListener('click', () => {
+      coursesTrack.scrollBy({ left: -getCarouselCardStep(), behavior: 'smooth' });
+    });
+
+    coursesNextBtn.addEventListener('click', () => {
+      coursesTrack.scrollBy({ left: getCarouselCardStep(), behavior: 'smooth' });
+    });
+
+    coursesDots.forEach((dot, idx) => {
+      dot.addEventListener('click', () => {
+        coursesTrack.scrollTo({ left: idx * getCarouselCardStep(), behavior: 'smooth' });
+      });
+    });
+
+    coursesTrack.addEventListener('scroll', updateCoursesCarouselState, { passive: true });
+    window.addEventListener('resize', updateCoursesCarouselState);
+    updateCoursesCarouselState();
+
+    // Scroll carousel card into view when requested
+    function scrollToCarouselCard(cardId) {
+      const card = coursesTrack.querySelector(cardId);
+      if (card) {
+        coursesTrack.scrollTo({ left: card.offsetLeft - coursesTrack.offsetLeft, behavior: 'smooth' });
+      }
+    }
+
+    if (window.location.hash) {
+      setTimeout(() => scrollToCarouselCard(window.location.hash), 300);
+    }
+  }
+
+  // 4b. Course Category Filtering
   const filterBtns = document.querySelectorAll('.filter-btn');
   const courseCards = document.querySelectorAll('[data-category]');
 
@@ -60,11 +126,16 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.classList.add('active');
 
       const filterValue = btn.getAttribute('data-filter');
+      let visibleCarouselCards = 0;
 
       courseCards.forEach(card => {
         const categories = card.getAttribute('data-category').split(' ');
-        if (filterValue === 'all' || categories.includes(filterValue)) {
+        const isMatch = filterValue === 'all' || categories.includes(filterValue);
+        if (isMatch) {
           card.style.display = '';
+          if (card.closest('#coursesCarouselTrack')) {
+            visibleCarouselCards++;
+          }
           setTimeout(() => {
             card.style.opacity = '1';
             card.style.transform = 'translateY(0)';
@@ -77,6 +148,21 @@ document.addEventListener('DOMContentLoaded', () => {
           }, 300);
         }
       });
+
+      if (carouselSection) {
+        if (filterValue === 'all' || visibleCarouselCards > 0) {
+          carouselSection.style.display = '';
+        } else {
+          setTimeout(() => {
+            carouselSection.style.display = 'none';
+          }, 300);
+        }
+      }
+
+      if (coursesTrack) {
+        coursesTrack.scrollLeft = 0;
+        setTimeout(updateCoursesCarouselState, 350);
+      }
     });
   });
 
