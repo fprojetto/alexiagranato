@@ -50,35 +50,81 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4. Course Category Filtering
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const courseCards = document.querySelectorAll('[data-category]');
+  // 4. Course Category Tab System (Opzione 1)
+  const tabBtns = document.querySelectorAll('.filter-tabs .filter-btn');
+  const tabPanes = document.querySelectorAll('.course-tab-pane');
+  const panelsContainer = document.getElementById('coursesTabPanels');
 
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+  function switchCourseTab(targetTab, shouldScroll = false) {
+    if (!panelsContainer) return;
 
-      const filterValue = btn.getAttribute('data-filter');
+    tabBtns.forEach(btn => {
+      const isMatch = btn.getAttribute('data-tab') === targetTab;
+      btn.classList.toggle('active', isMatch);
+      btn.setAttribute('aria-selected', isMatch ? 'true' : 'false');
+    });
 
-      courseCards.forEach(card => {
-        const categories = card.getAttribute('data-category').split(' ');
-        if (filterValue === 'all' || categories.includes(filterValue)) {
-          card.style.display = '';
-          setTimeout(() => {
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0)';
-          }, 50);
-        } else {
-          card.style.opacity = '0';
-          card.style.transform = 'translateY(15px)';
-          setTimeout(() => {
-            card.style.display = 'none';
-          }, 300);
-        }
+    if (targetTab === 'all') {
+      panelsContainer.classList.add('show-all');
+      tabPanes.forEach(pane => pane.classList.remove('active'));
+    } else {
+      panelsContainer.classList.remove('show-all');
+      tabPanes.forEach(pane => {
+        const isTarget = pane.id === `tab-pane-${targetTab}`;
+        pane.classList.toggle('active', isTarget);
+      });
+    }
+
+    if (shouldScroll) {
+      const coursesSection = document.getElementById('corsi');
+      if (coursesSection) {
+        coursesSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }
+
+  if (tabBtns.length > 0) {
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tabId = btn.getAttribute('data-tab');
+        switchCourseTab(tabId, false);
       });
     });
-  });
+
+    // Map existing URL hashes to their respective category tabs
+    const hashToTabMap = {
+      '#corsi-donna': 'donna',
+      '#maternita': 'maternita',
+      '#post-parto': 'maternita',
+      '#sviluppo-infantile': 'infanzia',
+      '#yoga-bimbi': 'infanzia',
+      '#percorsi-esclusivi': 'esclusivi',
+      '#dal-grembo': 'esclusivi',
+      '#eventi-e-riti': 'esclusivi'
+    };
+
+    // When an anchor link is clicked anywhere on the page
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      const href = link.getAttribute('href');
+      if (hashToTabMap[href]) {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetTab = hashToTabMap[href];
+          switchCourseTab(targetTab, false);
+          const targetEl = document.querySelector(href) || document.getElementById('corsi');
+          if (targetEl) {
+            targetEl.scrollIntoView({ behavior: 'smooth' });
+          }
+          history.pushState(null, '', href);
+        });
+      }
+    });
+
+    // On page load, if URL contains hash, activate corresponding tab
+    if (window.location.hash && hashToTabMap[window.location.hash]) {
+      switchCourseTab(hashToTabMap[window.location.hash], true);
+    }
+  }
 
   // 5. Quotes Carousel
   const quoteSlides = document.querySelectorAll('.quote-slide');

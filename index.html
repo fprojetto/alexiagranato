@@ -337,273 +337,305 @@
           <p>Dall'Hatha Yoga al supporto per la gravidanza e i primi anni di vita: percorsi mirati per accompagnare con cura ogni trasformazione.</p>
         </div>
 
-        <!-- Filter Tabs -->
-        <div class="filter-tabs">
-          <button class="filter-btn active" data-filter="all">Tutti i Corsi</button>
-          <button class="filter-btn" data-filter="donna">Hatha Yoga Donna</button>
-          <button class="filter-btn" data-filter="maternita">Maternità & Nascita</button>
-          <button class="filter-btn" data-filter="infanzia">Sviluppo Infantile (0-3 Anni)</button>
-          <button class="filter-btn" data-filter="esclusivi">Percorsi Esclusivi & Riti</button>
+        <!-- Category Tabs -->
+        <div class="filter-tabs" role="tablist" aria-label="Filtra i percorsi">
+          <button class="filter-btn active" role="tab" aria-selected="true" aria-controls="tab-pane-donna" data-tab="donna">
+            🌸 Hatha Yoga Donna
+          </button>
+          <button class="filter-btn" role="tab" aria-selected="false" aria-controls="tab-pane-maternita" data-tab="maternita">
+            🤰 Maternità & Post Parto
+          </button>
+          <button class="filter-btn" role="tab" aria-selected="false" aria-controls="tab-pane-infanzia" data-tab="infanzia">
+            👶 Sviluppo & Bimbi (0-3 Anni)
+          </button>
+          <button class="filter-btn" role="tab" aria-selected="false" aria-controls="tab-pane-esclusivi" data-tab="esclusivi">
+            ✨ Percorsi Esclusivi & Riti
+          </button>
+          <button class="filter-btn" role="tab" aria-selected="false" aria-controls="tab-pane-all" data-tab="all">
+            🌟 Tutti i Corsi
+          </button>
         </div>
 
-        <!-- ==========================================
-             1. HATHA YOGA PER LA DONNA (Editorial Feature)
-             ========================================== -->
-        <div class="course-card-editorial" id="corsi-donna" data-category="donna">
-          <div class="course-card-image">
-            <img src="assets/images/hatha-donna.webp" alt="Hatha Yoga per la Donna con Alexia" loading="lazy">
-            <span class="course-badge">Percorso Donna</span>
-          </div>
-          <div class="course-card-body">
-            <h4>Sezione Donna</h4>
-            <h3>Hatha Yoga per la Donna</h3>
-            <span class="course-card-subtitle">Un tempo protetto per te, in tutte le fasi della vita</span>
-            <p>
-              Un percorso fondato sull'ascolto di sé e sul movimento consapevole per aiutarti a ritrovare il respiro e regolare il sistema nervoso per trovare calma e centratura. È un'occasione speciale per staccare la spina, liberare il corpo dalle tensioni accumulate e calmare la mente.
-            </p>
+        <!-- Tab Panels Container -->
+        <div class="courses-tab-panels" id="coursesTabPanels">
 
-            <div class="benefit-list">
-              <div class="benefit-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span><strong>I benefici principali:</strong> Svilupperai stabilità, radicamento, equilibrio, forza interiore, sicurezza e intuizione femminile.</span>
+          <!-- ==========================================
+               PANNELLO 1: HATHA YOGA DONNA
+               ========================================== -->
+          <div class="course-tab-pane active" id="tab-pane-donna" role="tabpanel" aria-labelledby="tab-donna">
+            <div class="course-card-editorial" id="corsi-donna" data-category="donna">
+              <div class="course-card-image">
+                <img src="assets/images/hatha-donna.webp" alt="Hatha Yoga per la Donna con Alexia" loading="lazy">
+                <span class="course-badge">Percorso Donna</span>
               </div>
-            </div>
+              <div class="course-card-body">
+                <h4>Sezione Donna</h4>
+                <h3>Hatha Yoga per la Donna</h3>
+                <span class="course-card-subtitle">Un tempo protetto per te, in tutte le fasi della vita</span>
+                <p>
+                  Un percorso fondato sull'ascolto di sé e sul movimento consapevole per aiutarti a ritrovare il respiro e regolare il sistema nervoso per trovare calma e centratura. È un'occasione speciale per staccare la spina, liberare il corpo dalle tensioni accumulate e calmare la mente.
+                </p>
 
-            <div class="course-meta-tags">
-              <span class="meta-tag">Lezioni di Gruppo</span>
-              <span class="meta-tag">Individuali Personalizzate</span>
-              <span class="meta-tag">Tutti i Livelli</span>
-            </div>
+                <div class="benefit-list">
+                  <div class="benefit-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span><strong>I benefici principali:</strong> Svilupperai stabilità, radicamento, equilibrio, forza interiore, sicurezza e intuizione femminile.</span>
+                  </div>
+                </div>
 
-            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-              <button onclick="openBookingModal('Hatha Yoga per la Donna')" class="btn btn-primary btn-sm">
-                Prenota la Lezione di Prova
-              </button>
-              <a href="https://wa.me/393792631325?text=Ciao%20Alexia,%20vorrei%20informazioni%20su%20Hatha%20Yoga%20Donna" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
-                Chiedi su WhatsApp
-              </a>
-            </div>
-          </div>
-        </div>
+                <div class="course-meta-tags">
+                  <span class="meta-tag">Lezioni di Gruppo</span>
+                  <span class="meta-tag">Individuali Personalizzate</span>
+                  <span class="meta-tag">Tutti i Livelli</span>
+                </div>
 
-        <!-- ==========================================
-             2. YOGA IN GRAVIDANZA E PER IL PARTO (Editorial Feature Reverse)
-             ========================================== -->
-        <div class="course-card-editorial reverse" id="maternita" data-category="maternita">
-          <div class="course-card-image">
-            <img src="assets/images/gravidanza.webp" alt="Yoga in Gravidanza e per il Parto" loading="lazy">
-            <span class="course-badge">Maternità & Nascita</span>
-          </div>
-          <div class="course-card-body">
-            <h4>Accompagniamo la Vita che Cresce</h4>
-            <h3>🤰 Yoga in Gravidanza e Preparazione al Parto</h3>
-            <span class="course-card-subtitle">Movimento in gravidanza, respiro consapevole e preparazione al parto</span>
-            <p>
-              Un percorso delicato di <strong>yoga in gravidanza</strong> per accompagnarti con cura settimana dopo settimana. Coltiviamo il <strong>movimento in gravidanza</strong> per sciogliere le tensioni, migliorare la postura e scoprire <strong>come prepararsi al parto</strong> con totale fiducia, serenità e ascolto del proprio corpo.
-            </p>
-
-            <div class="benefit-list">
-              <div class="benefit-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span><strong>Movimento in gravidanza consapevole:</strong> posture dolci per alleviare mal di schiena, sciogliere il bacino e favorire una postura corretta.</span>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                  <button onclick="openBookingModal('Hatha Yoga per la Donna')" class="btn btn-primary btn-sm">
+                    Prenota la Lezione di Prova
+                  </button>
+                  <a href="https://wa.me/393792631325?text=Ciao%20Alexia,%20vorrei%20informazioni%20su%20Hatha%20Yoga%20Donna" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                    Chiedi su WhatsApp
+                  </a>
+                </div>
               </div>
-              <div class="benefit-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span><strong>Come prepararsi al parto con il respiro:</strong> tecniche pratiche di pranayama e posizioni per gestire il travaglio e accogliere il dolore.</span>
-              </div>
-              <div class="benefit-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span><strong>Regolazione del sistema nervoso:</strong> ritrovare calma, centratura e superare paure e ansie legate alla nascita.</span>
-              </div>
-              <div class="benefit-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span><strong>Connessione intima e profonda:</strong> uno spazio protetto per entrare in profonda sintonizzazione emotiva con il bimbo nel grembo.</span>
-              </div>
-            </div>
-
-            <p style="font-size: 0.88rem; color: var(--color-accent); font-style: italic; margin-bottom: 1.5rem;">
-              *Nota speciale. Completano il percorso speciali laboratori di yoga e arteterapia in gravidanza con Gabriella Ricco, arteterapeuta qualificata, oltre a incontri dedicati alla coppia e approfondimenti tematici in stretta collaborazione con l'ostetrica Stefania Cuccarollo.
-            </p>
-
-            <div class="course-meta-tags">
-              <span class="meta-tag">Dal 2° Trimestre</span>
-              <span class="meta-tag">Lezioni di Gruppo</span>
-              <span class="meta-tag">Lezioni Individuali Personalizzate</span>
-              <span class="meta-tag">Collaborazione Ostetrica</span>
-            </div>
-
-            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-              <button onclick="openBookingModal('Yoga in Gravidanza e per il Parto')" class="btn btn-primary btn-sm">
-                Richiedi il Calendario Corsi
-              </button>
-              <a href="https://wa.me/393792631325?text=Ciao%20Alexia,%20vorrei%20il%20calendario%20dello%20Yoga%20in%20Gravidanza" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
-                Scrivimi Direttamente
-              </a>
             </div>
           </div>
-        </div>
 
-        <!-- ==========================================
-             3. 2-COLUMN GRID: POST PARTO & SVILUPPO INFANTILE
-             ========================================== -->
-        <div class="courses-grid-2">
-          <!-- Post Parto -->
-          <div class="course-box" data-category="maternita">
-            <div class="course-box-image">
-              <img src="assets/images/post-parto.webp" alt="Yoga Post Parto Mamma-Bebè" loading="lazy">
-              <span class="course-badge">Post Parto</span>
+          <!-- ==========================================
+               PANNELLO 2: MATERNITÀ & POST PARTO
+               ========================================== -->
+          <div class="course-tab-pane" id="tab-pane-maternita" role="tabpanel" aria-labelledby="tab-maternita">
+            <!-- Yoga Gravidanza -->
+            <div class="course-card-editorial reverse" id="maternita" data-category="maternita">
+              <div class="course-card-image">
+                <img src="assets/images/gravidanza.webp" alt="Yoga in Gravidanza e per il Parto" loading="lazy">
+                <span class="course-badge">Maternità & Nascita</span>
+              </div>
+              <div class="course-card-body">
+                <h4>Accompagniamo la Vita che Cresce</h4>
+                <h3>🤰 Yoga in Gravidanza e Preparazione al Parto</h3>
+                <span class="course-card-subtitle">Movimento in gravidanza, respiro consapevole e preparazione al parto</span>
+                <p>
+                  Un percorso delicato di <strong>yoga in gravidanza</strong> per accompagnarti con cura settimana dopo settimana. Coltiviamo il <strong>movimento in gravidanza</strong> per sciogliere le tensioni, migliorare la postura e scoprire <strong>come prepararsi al parto</strong> con totale fiducia, serenità e ascolto del proprio corpo.
+                </p>
+
+                <div class="benefit-list">
+                  <div class="benefit-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span><strong>Movimento in gravidanza consapevole:</strong> posture dolci per alleviare mal di schiena, sciogliere il bacino e favorire una postura corretta.</span>
+                  </div>
+                  <div class="benefit-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span><strong>Come prepararsi al parto con il respiro:</strong> tecniche pratiche di pranayama e posizioni per gestire il travaglio e accogliere il dolore.</span>
+                  </div>
+                  <div class="benefit-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span><strong>Regolazione del sistema nervoso:</strong> ritrovare calma, centratura e superare paure e ansie legate alla nascita.</span>
+                  </div>
+                  <div class="benefit-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span><strong>Connessione intima e profonda:</strong> uno spazio protetto per entrare in profonda sintonizzazione emotiva con il bimbo nel grembo.</span>
+                  </div>
+                </div>
+
+                <p style="font-size: 0.88rem; color: var(--color-accent); font-style: italic; margin-bottom: 1.5rem;">
+                  *Nota speciale. Completano il percorso speciali laboratori di yoga e arteterapia in gravidanza con Gabriella Ricco, arteterapeuta qualificata, oltre a incontri dedicati alla coppia e approfondimenti tematici in stretta collaborazione con l'ostetrica Stefania Cuccarollo.
+                </p>
+
+                <div class="course-meta-tags">
+                  <span class="meta-tag">Dal 2° Trimestre</span>
+                  <span class="meta-tag">Lezioni di Gruppo</span>
+                  <span class="meta-tag">Lezioni Individuali Personalizzate</span>
+                  <span class="meta-tag">Collaborazione Ostetrica</span>
+                </div>
+
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                  <button onclick="openBookingModal('Yoga in Gravidanza e per il Parto')" class="btn btn-primary btn-sm">
+                    Richiedi il Calendario Corsi
+                  </button>
+                  <a href="https://wa.me/393792631325?text=Ciao%20Alexia,%20vorrei%20il%20calendario%20dello%20Yoga%20in%20Gravidanza" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                    Scrivimi Direttamente
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="course-box-content">
-              <div>
+
+            <!-- Post Parto -->
+            <div class="course-card-editorial" id="post-parto" data-category="maternita">
+              <div class="course-card-image">
+                <img src="assets/images/post-parto.webp" alt="Yoga Post Parto Mamma-Bebè" loading="lazy">
+                <span class="course-badge">Post Parto</span>
+              </div>
+              <div class="course-card-body">
                 <h4>Neomamme & Neonati</h4>
                 <h3>👩‍👦 Yoga Post Parto Mamma-Bebè</h3>
-                <span class="subtitle">Per neomamme e neonati da 40 giorni a 1 anno</span>
+                <span class="course-card-subtitle">Per neomamme e neonati da 40 giorni a 1 anno</span>
                 <p>
-                  Un tempo prezioso per prenderti cura del tuo benessere e quello del tuo bebè.  Attraverso il movimento dolce, esperienze sensoriali, il gioco, il rilassamento rafforziamo il vostro legame reciproco e promuoviamo il suo sviluppo motorio in un clima protetto e accogliente.
+                  Un tempo prezioso per prenderti cura del tuo benessere e quello del tuo bebè. Attraverso il movimento dolce, esperienze sensoriali, il gioco, il rilassamento rafforziamo il vostro legame reciproco e promuoviamo il suo sviluppo motorio in un clima protetto e accogliente.
                 </p>
-                <div class="age-chips">
-                  <span class="age-chip">40 giorni – 1 anno</span>
-                  <span class="age-chip">Lezioni di Gruppo</span>
-                  <span class="age-chip">Condivisione tra mamme</span>
+                <div class="course-meta-tags">
+                  <span class="meta-tag">40 giorni – 1 anno</span>
+                  <span class="meta-tag">Lezioni di Gruppo</span>
+                  <span class="meta-tag">Condivisione tra mamme</span>
+                </div>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                  <button onclick="openBookingModal('Yoga Post Parto Mamma-Bebè')" class="btn btn-primary btn-sm">
+                    Unisciti alle Lezioni di Gruppo
+                  </button>
+                  <a href="https://wa.me/393792631325?text=Ciao%20Alexia,%20vorrei%20informazioni%20su%20Yoga%20Post%20Parto" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                    Chiedi su WhatsApp
+                  </a>
                 </div>
               </div>
-              <div style="margin-top: 1.2rem;">
-                <button onclick="openBookingModal('Yoga Post Parto Mamma-Bebè')" class="btn btn-primary btn-sm" style="width: 100%;">
-                  Unisciti alle Lezioni di Gruppo
-                </button>
-              </div>
             </div>
           </div>
 
-          <!-- Sviluppo Motorio Infantile -->
-          <div class="course-box" id="sviluppo-infantile" data-category="infanzia">
-            <div class="course-box-image">
-              <img src="assets/images/sviluppo-infantile.webp" alt="Laboratori di Sviluppo Motorio Infantile 0-24 mesi" loading="lazy">
-              <span class="course-badge">0-24 Mesi</span>
-            </div>
-            <div class="course-box-content">
-              <div>
-                <h4>Muoversi e Crescere Insieme</h4>
-                <h3>👶 Sviluppo Motorio Infantile (0-24 mesi)</h3>
-                <span class="subtitle">Laboratori pratici e interattivi per genitori e bimbi</span>
-                <p>
-                  I nostri laboratori sullo <strong>sviluppo motorio infantile</strong> ti guidano ad accompagnare la crescita del tuo bebè fin dalle prime settimane. Attraverso l’osservazione, il movimento libero, esperienze sensoriali e il gioco, scoprirai come proporre gli stimoli corretti per facilitare il raggiungimento delle tappe motorie fondamentali (tummy time, controllo del capo, rotolo, gattonamento e primi passi).
-                </p>
-                <div class="age-chips">
-                  <span class="age-chip">Lezioni di Gruppo e Individuali</span>
-                  <span class="age-chip">0-3 mesi</span>
-                  <span class="age-chip">3-6 mesi</span>
-                  <span class="age-chip">6-9 mesi</span>
-                  <span class="age-chip">9-14 mesi</span>
-                  <span class="age-chip">14-24 mesi</span>
+          <!-- ==========================================
+               PANNELLO 3: SVILUPPO INFANTILE & BIMBI
+               ========================================== -->
+          <div class="course-tab-pane" id="tab-pane-infanzia" role="tabpanel" aria-labelledby="tab-infanzia">
+            <div class="courses-grid-2">
+              <!-- Sviluppo Motorio Infantile -->
+              <div class="course-box" id="sviluppo-infantile" data-category="infanzia">
+                <div class="course-box-image">
+                  <img src="assets/images/sviluppo-infantile.webp" alt="Laboratori di Sviluppo Motorio Infantile 0-24 mesi" loading="lazy">
+                  <span class="course-badge">0-24 Mesi</span>
+                </div>
+                <div class="course-box-content">
+                  <div>
+                    <h4>Muoversi e Crescere Insieme</h4>
+                    <h3>👶 Sviluppo Motorio Infantile (0-24 mesi)</h3>
+                    <span class="subtitle">Laboratori pratici e interattivi per genitori e bimbi</span>
+                    <p>
+                      I nostri laboratori sullo <strong>sviluppo motorio infantile</strong> ti guidano ad accompagnare la crescita del tuo bebè fin dalle prime settimane. Attraverso l’osservazione, il movimento libero, esperienze sensoriali e il gioco, scoprirai come proporre gli stimoli corretti per facilitare il raggiungimento delle tappe motorie fondamentali (tummy time, controllo del capo, rotolo, gattonamento e primi passi).
+                    </p>
+                    <div class="age-chips">
+                      <span class="age-chip">Lezioni di Gruppo e Individuali</span>
+                      <span class="age-chip">0-3 mesi</span>
+                      <span class="age-chip">3-6 mesi</span>
+                      <span class="age-chip">6-9 mesi</span>
+                      <span class="age-chip">9-14 mesi</span>
+                      <span class="age-chip">14-24 mesi</span>
+                    </div>
+                  </div>
+                  <div style="margin-top: 1.2rem;">
+                    <button onclick="openBookingModal('Laboratorio Sviluppo Motorio Infantile (0-24 mesi)')" class="btn btn-primary btn-sm" style="width: 100%;">
+                      Scegli il Laboratorio per l'Età del tuo Bimbo
+                    </button>
+                  </div>
                 </div>
               </div>
-              <div style="margin-top: 1.2rem;">
-                <button onclick="openBookingModal('Laboratorio Sviluppo Motorio Infantile (0-24 mesi)')" class="btn btn-primary btn-sm" style="width: 100%;">
-                  Scegli il Laboratorio per l'Età del tuo Bimbo
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- ==========================================
-             4. 2-COLUMN GRID: YOGA BIMBI & DAL GREMBO
-             ========================================== -->
-        <div class="courses-grid-2" id="percorsi-esclusivi">
-          <!-- Yoga Bimbi -->
-          <div class="course-box" data-category="infanzia">
-            <div class="course-box-image">
-              <img src="assets/images/yoga-bimbi.webp" alt="Yoga Bimbi 1-3 anni" loading="lazy">
-              <span class="course-badge">1-3 Anni</span>
-            </div>
-            <div class="course-box-content">
-              <div>
-                <h4>Primi Passi</h4>
-                <h3>🧒 Yoga Bimbi (1-3 anni)</h3>
-                <span class="subtitle">Con mamma, papà o i nonni</span>
-                <p>
-                  Uno spazio sicuro da esplorare. Il tuo bimbo potrà sperimentare il movimento, gli stimoli sensoriali e l'immaginazione con la sicurezza della figura di riferimento, coltivando concentrazione e rilassamento nel gruppo.
-                </p>
-              </div>
-              <div style="margin-top: 1.2rem;">
-                <button onclick="openBookingModal('Yoga Bimbi (1-3 anni)')" class="btn btn-primary btn-sm" style="width: 100%;">
-                  Chiedi Informazioni
-                </button>
+              <!-- Yoga Bimbi -->
+              <div class="course-box" id="yoga-bimbi" data-category="infanzia">
+                <div class="course-box-image">
+                  <img src="assets/images/yoga-bimbi.webp" alt="Yoga Bimbi 1-3 anni" loading="lazy">
+                  <span class="course-badge">1-3 Anni</span>
+                </div>
+                <div class="course-box-content">
+                  <div>
+                    <h4>Primi Passi</h4>
+                    <h3>🧒 Yoga Bimbi (1-3 anni)</h3>
+                    <span class="subtitle">Con mamma, papà o i nonni</span>
+                    <p>
+                      Uno spazio sicuro da esplorare. Il tuo bimbo potrà sperimentare il movimento, gli stimoli sensoriali e l'immaginazione con la sicurezza della figura di riferimento, coltivando concentrazione e rilassamento nel gruppo.
+                    </p>
+                    <div class="age-chips">
+                      <span class="age-chip">1-3 Anni</span>
+                      <span class="age-chip">Gioco & Movimento</span>
+                      <span class="age-chip">Bimbo + Adulto</span>
+                    </div>
+                  </div>
+                  <div style="margin-top: 1.2rem;">
+                    <button onclick="openBookingModal('Yoga Bimbi (1-3 anni)')" class="btn btn-primary btn-sm" style="width: 100%;">
+                      Chiedi Informazioni
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Percorso Dal Grembo ai Primi Passi -->
-          <div class="course-box" data-category="esclusivi">
-            <div class="course-box-image">
-              <img src="assets/images/dal-grembo.webp" alt="Percorso Dal Grembo ai Primi Passi" loading="lazy">
-              <span class="course-badge">Esclusivo 1-to-1</span>
-            </div>
-            <div class="course-box-content">
-              <div>
+          <!-- ==========================================
+               PANNELLO 4: PERCORSI ESCLUSIVI & RITI
+               ========================================== -->
+          <div class="course-tab-pane" id="tab-pane-esclusivi" role="tabpanel" aria-labelledby="tab-esclusivi">
+            <!-- Percorso Dal Grembo ai Primi Passi -->
+            <div class="course-card-editorial" id="percorsi-esclusivi" data-category="esclusivi">
+              <div class="course-card-image">
+                <img src="assets/images/dal-grembo.webp" alt="Percorso Dal Grembo ai Primi Passi" loading="lazy">
+                <span class="course-badge">Esclusivo 1-to-1</span>
+              </div>
+              <div class="course-card-body">
                 <h4>Cammino Personalizzato</h4>
                 <h3>🌿 Dal Grembo ai Primi Passi</h3>
-                <span class="subtitle">Benessere, connessione e crescita continua</span>
+                <span class="course-card-subtitle">Benessere, connessione e crescita continua</span>
                 <p>
                   Un cammino esclusivo che ti segue passo dopo passo: dalla gravidanza al post parto, fino ai primi passi del tuo piccolo. Interamente su misura per te, per vivere questa grande trasformazione con totale fiducia e serenità.
                 </p>
-              </div>
-              <div style="margin-top: 1.2rem;">
-                <button onclick="openBookingModal('Percorso Dal Grembo ai Primi Passi')" class="btn btn-primary btn-sm" style="width: 100%;">
-                  Consulenza Conoscitiva Gratuita
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ==========================================
-             5. Riti di Passaggio & Eventi (Editorial Feature)
-             ========================================== -->
-        <div class="course-card-editorial" id="eventi-e-riti" data-category="esclusivi">
-          <div class="course-card-image">
-            <img src="assets/images/riti-femminili.webp" alt="Riti di Passaggio ed Eventi Famiglia" loading="lazy">
-            <span class="course-badge">Eventi & Rituali</span>
-          </div>
-          <div class="course-card-body">
-            <div>
-              <h4>Celebrare la Vita</h4>
-              <h3>✨ Esperienze, Cerimonie e Cerchi</h3>
-              <span class="course-card-subtitle">Spazi di condivisione, ritualità e comunità per onorare i grandi passaggi della vita</span>
-              <p>
-                Credo profondamente nel potere della condivisione, della ritualità e della comunità. Ho creato questi spazi e cerimonie speciali per celebrare i passaggi più importanti della vita, trovare sostegno reciproco e vivere momenti di qualità attraverso la musica, il movimento e il bagno di suoni per tutta la famiglia.
-              </p>
-
-              <p>Questi eventi nascono e si arricchiscono grazie a preziose collaborazioni con:</p>
-
-              <div class="benefit-list">
-                <div class="benefit-item">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span><strong>Orietta Ravicchio</strong> - Consulente e Operatrice del Benessere, esperta in Armonizzazioni Sonore con Gong, Campane Tibetane e di Cristallo.</span>
+                <div class="course-meta-tags">
+                  <span class="meta-tag">Percorso Individuale</span>
+                  <span class="meta-tag">Gravidanza + Post Parto + Primi Passi</span>
+                  <span class="meta-tag">Su Misura</span>
                 </div>
-
-                <div class="benefit-item">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span><strong>Elisabetta Chiadò Rana</strong> - Sarta e Operatrice Olistica in Sciamanesimo Femminile &copy;.</span>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                  <button onclick="openBookingModal('Percorso Dal Grembo ai Primi Passi')" class="btn btn-primary btn-sm">
+                    Consulenza Conoscitiva Gratuita
+                  </button>
+                  <a href="https://wa.me/393792631325?text=Ciao%20Alexia,%20vorrei%20informazioni%20su%20Dal%20Grembo%20ai%20Primi%20Passi" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                    Chiedi su WhatsApp
+                  </a>
                 </div>
               </div>
+            </div>
 
-            <div class="course-meta-tags">
-              <span class="meta-tag">Mother Blessing</span>
-              <span class="meta-tag">Bridal Blessing</span>
-              <span class="meta-tag">Eventi per la Donna e la Famiglia</span>
-            </div>
-            </div>
-            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-              <button onclick="openBookingModal('Riti di Passaggio ed Eventi')" class="btn btn-primary btn-sm">
-                Progetta il tuo evento
-              </button>
-              <a href="https://wa.me/393792631325?text=Ciao%20Alexia,%20vorrei%20informazioni%20su%20Hatha%20Yoga%20Donna" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
-                Chiedi su WhatsApp
-              </a>
+            <!-- Riti di Passaggio ed Eventi -->
+            <div class="course-card-editorial reverse" id="eventi-e-riti" data-category="esclusivi">
+              <div class="course-card-image">
+                <img src="assets/images/riti-femminili.webp" alt="Riti di Passaggio ed Eventi Famiglia" loading="lazy">
+                <span class="course-badge">Eventi & Rituali</span>
+              </div>
+              <div class="course-card-body">
+                <div>
+                  <h4>Celebrare la Vita</h4>
+                  <h3>✨ Esperienze, Cerimonie e Cerchi</h3>
+                  <span class="course-card-subtitle">Spazi di condivisione, ritualità e comunità per onorare i grandi passaggi della vita</span>
+                  <p>
+                    Credo profondamente nel potere della condivisione, della ritualità e della comunità. Ho creato questi spazi e cerimonie speciali per celebrare i passaggi più importanti della vita, trovare sostegno reciproco e vivere momenti di qualità attraverso la musica, il movimento e il bagno di suoni per tutta la famiglia.
+                  </p>
+
+                  <p>Questi eventi nascono e si arricchiscono grazie a preziose collaborazioni con:</p>
+
+                  <div class="benefit-list">
+                    <div class="benefit-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span><strong>Orietta Ravicchio</strong> - Consulente e Operatrice del Benessere, esperta in Armonizzazioni Sonore con Gong, Campane Tibetane e di Cristallo.</span>
+                    </div>
+
+                    <div class="benefit-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span><strong>Elisabetta Chiadò Rana</strong> - Sarta e Operatrice Olistica in Sciamanesimo Femminile &copy;.</span>
+                    </div>
+                  </div>
+
+                  <div class="course-meta-tags">
+                    <span class="meta-tag">Mother Blessing</span>
+                    <span class="meta-tag">Bridal Blessing</span>
+                    <span class="meta-tag">Eventi per la Donna e la Famiglia</span>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                  <button onclick="openBookingModal('Riti di Passaggio ed Eventi')" class="btn btn-primary btn-sm">
+                    Progetta il tuo evento
+                  </button>
+                  <a href="https://wa.me/393792631325?text=Ciao%20Alexia,%20vorrei%20informazioni%20sugli%20Eventi%20e%20Riti" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                    Chiedi su WhatsApp
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
